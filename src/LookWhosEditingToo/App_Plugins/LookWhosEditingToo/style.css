@@ -1,4 +1,4 @@
-div.editing:before{
+div.look-whos-editing-too:before{
 	content:"\e01c";
 	font-family: 'icomoon';
 	color: #04bfbf;
@@ -6,4 +6,16 @@ div.editing:before{
 	font-size: 8px;
 	padding-left: 13px;
 	padding-top: 8px;
+}
+
+div#look-whos-editing-too {
+
+    float: left;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+div#look-whos-editing-too img {
+    border-radius: 16px;
+    margin-left: 5px;
 }

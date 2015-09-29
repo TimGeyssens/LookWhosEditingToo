@@ -12,7 +12,9 @@ namespace LookWhosEditingToo.Controllers
        public IEnumerable<Edit> GetAllEdits()
        {
            var query = new Sql().Select("*").From("lookwhoseditingnow").Where<Edit>(x=> x.UserId != UmbracoContext.UmbracoUser.Id);
-           return DatabaseContext.Database.Fetch<Edit>(query);
+           var edits = DatabaseContext.Database.Fetch<Edit>(query);
+
+           return edits;
        }
 
        public IEnumerable<Edit> GetByNodeId(int nodeId)

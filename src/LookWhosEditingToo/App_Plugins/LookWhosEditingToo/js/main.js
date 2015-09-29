@@ -46,21 +46,26 @@ $(window).load(
 
             console.log("user " + userId + " is now on node " + nodeId);
 
-            $("i[title*='content/content/edit']").closest("li").children("div").removeClass("editing");
+            $("i[title*='content/content/edit']").closest("li").children("div").removeClass("look-whos-editing-too");
+
 
             //get all edits
+            console.log(Math.floor(Date.now() / 1000) + " start get all edits");
             editingResource.getAllEdits().then(function (resp) {
+                console.log(Math.floor(Date.now() / 1000) + " done get all edits");
                 console.log(resp.data);
                 for (var i = 0; i < resp.data.length; i++) {
                     var edit = resp.data[i];
-                    $("i[title*='" + edit.nodeId + "']").closest("li").children("div").addClass("editing");
+                    $("i[title*='" + edit.nodeId + "']").closest("li").children("div").addClass("look-whos-editing-too");
                 }
 
             });
 
-            //$("i[title*='" + nodeId + "']").closest("li").children("div")
-            //    .addClass("editing")
-            //    .attr("rel", userId);
+
+            if ($("#look-whos-editing-too").length == 0) {
+                $("ng-form[name='contentNameForm']").parent().parent().children(".span5").prepend("<div id='look-whos-editing-too'></div>");
+            }
+            $("#look-whos-editing-too").append("<img src='//www.gravatar.com/avatar/6a6c19fea4a3676970167ce51f39e6ee.jpg?s=20&amp;d=mm' >");
 
         };
 
