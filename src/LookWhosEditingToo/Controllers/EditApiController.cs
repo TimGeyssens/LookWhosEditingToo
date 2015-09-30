@@ -17,7 +17,7 @@ namespace LookWhosEditingToo.Controllers
            {
                var user = Services.UserService.GetUserById((int)edit.UserId);
                edit.UserGravatar = Utility.HashEmailForGravatar(user.Email);
-               edit.UserName = user.Username;
+               edit.UserName = user.Name;
            }
            return edits;
        }
