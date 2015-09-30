@@ -243,6 +243,7 @@
     <Compile Include="Models\Edit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartUp.cs" />
+    <Compile Include="UmbracoStartUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\LookWhosEditingToo\package.manifest" />
@@ -283,7 +284,12 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(ProjectDir)bin\LookWhosEditingToo.*" "$(ProjectDir)..\TestSite\bin\" /Y
 
-xcopy "$(ProjectDir)App_plugins\LookWhosEditingToo\*.*" "$(ProjectDir)..\TestSite\App_plugins\LookWhosEditingToo\" /Y /S</PostBuildEvent>
+xcopy "$(ProjectDir)App_plugins\LookWhosEditingToo\*.*" "$(ProjectDir)..\TestSite\App_plugins\LookWhosEditingToo\" /Y /S
+
+
+xcopy "$(ProjectDir)bin\LookWhosEditingToo.*" "$(ProjectDir)..\TestSitev7.2.8\bin\" /Y
+
+xcopy "$(ProjectDir)App_plugins\LookWhosEditingToo\*.*" "$(ProjectDir)..\TestSitev7.2.8\App_plugins\LookWhosEditingToo\" /Y /S</PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

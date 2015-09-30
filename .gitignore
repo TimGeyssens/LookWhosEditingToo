@@ -103,3 +103,7 @@ www/App_Data/umbraco.config
 src/TestSite/App_Data/Logs/
 src/TestSite/App_Data/cache/
 src/TestSite/App_Data/TEMP/*
+
+src/TestSitev7.2.8/App_Data/Logs/
+src/TestSitev7.2.8/App_Data/cache/
+src/TestSitev7.2.8/App_Data/TEMP/*
