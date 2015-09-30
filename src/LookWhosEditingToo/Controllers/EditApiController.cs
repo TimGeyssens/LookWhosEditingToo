@@ -13,7 +13,12 @@ namespace LookWhosEditingToo.Controllers
        {
            var query = new Sql().Select("*").From("lookwhoseditingnow").Where<Edit>(x=> x.UserId != UmbracoContext.UmbracoUser.Id);
            var edits = DatabaseContext.Database.Fetch<Edit>(query);
-
+           foreach (var edit in edits)
+           {
+               var user = Services.UserService.GetUserById((int)edit.UserId);
+               edit.UserGravatar = Utility.HashEmailForGravatar(user.Email);
+               edit.UserName = user.Username;
+           }
            return edits;
        }
 

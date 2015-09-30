@@ -57,15 +57,18 @@ $(window).load(
                 for (var i = 0; i < resp.data.length; i++) {
                     var edit = resp.data[i];
                     $("i[title*='" + edit.nodeId + "']").closest("li").children("div").addClass("look-whos-editing-too");
+
+                    if ($("#look-whos-editing-too").length == 0) {
+                        $("ng-form[name='contentNameForm']").parent().parent().children(".span5").prepend("<div id='look-whos-editing-too'></div>");
+                    }
+                    $("#look-whos-editing-too").append("<img src='//www.gravatar.com/avatar/"+edit.userGravatar+".jpg?s=20&d=mm' alt='"+edit.userName+"' >");
+
                 }
 
             });
 
 
-            if ($("#look-whos-editing-too").length == 0) {
-                $("ng-form[name='contentNameForm']").parent().parent().children(".span5").prepend("<div id='look-whos-editing-too'></div>");
-            }
-            $("#look-whos-editing-too").append("<img src='//www.gravatar.com/avatar/6a6c19fea4a3676970167ce51f39e6ee.jpg?s=20&amp;d=mm' >");
+            
 
         };
 
