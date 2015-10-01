@@ -15,7 +15,7 @@
 	<!-- PROPERTIES -->
 	<!-- SHARED PROPERTIES -->
 	<PropertyGroup>
-		<PackageName>Look Who is Editing Too</PackageName>
+		<PackageName>Look Who's Editing Too</PackageName>
 		<MinUmbracoVersion>7.3.0</MinUmbracoVersion>
 		<Readme>Avoid conflicting user edits</Readme>
 		<AuthorName>Tim Geyssens</AuthorName>

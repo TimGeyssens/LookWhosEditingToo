@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <umbPackage>
 	<info>
 		<package>
-			<name>Look Who's Editing Too</name>
+			<name>Look Who is Editing Too</name>
 			<version>0.0.0</version>
 			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
 			<url>http://nibble.be</url>
 			<requirements>
-				<major>0</major>
-				<minor>0</minor>
+				<major>7</major>
+				<minor>3</minor>
 				<patch>0</patch>
 			</requirements>
 		</package>
