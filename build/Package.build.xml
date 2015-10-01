@@ -32,7 +32,7 @@
 		<Copyright>Tim Geyssens</Copyright>
 		<Owners>Tim Geyssens</Owners>
 		<Summary>Avoid conflicting user edits</Summary>
-		<IconUrl>https://raw.githubusercontent.com/TimGeyssens/UmbracoPageNotFoundManager/master/logo.png</IconUrl>
+		<IconUrl>https://raw.githubusercontent.com/TimGeyssens/LookWhosEditingToo/master/logo.png</IconUrl>
 		<Tags>umbraco</Tags>
 		<Language>en-GB</Language>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
