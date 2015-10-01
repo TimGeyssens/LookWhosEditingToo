@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{136496
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSite", "TestSite\TestSite.csproj", "{546FDE57-038F-4F6F-BD79-23CACABE9F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSitev7._2._8", "TestSitev7.2.8\TestSitev7._2._8.csproj", "{66A3D300-4BBD-4628-A5C1-F4937471DE2A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{546FDE57-038F-4F6F-BD79-23CACABE9F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546FDE57-038F-4F6F-BD79-23CACABE9F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546FDE57-038F-4F6F-BD79-23CACABE9F78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66A3D300-4BBD-4628-A5C1-F4937471DE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66A3D300-4BBD-4628-A5C1-F4937471DE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66A3D300-4BBD-4628-A5C1-F4937471DE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66A3D300-4BBD-4628-A5C1-F4937471DE2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

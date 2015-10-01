@@ -67,7 +67,7 @@ $(window).load(
                 });
 
 
-                getAllEdits();
+                setTimeout(getAllEdits, 1000);
 
             }
             else {
@@ -82,6 +82,8 @@ $(window).load(
                 });
 
             }
+
+            
         });
 
 
