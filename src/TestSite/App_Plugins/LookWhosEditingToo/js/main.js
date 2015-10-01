@@ -66,9 +66,8 @@ $(window).load(
                     editingResource.setEdit(contentNodeId, user.id);
                 });
 
-                
-                setTimeout(getAllEdits,1000);
-                
+
+                setTimeout(getAllEdits, 1000);
 
             }
             else {
