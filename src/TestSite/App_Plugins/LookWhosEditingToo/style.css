@@ -10,9 +10,9 @@ div.look-whos-editing-too:before{
 
 div#look-whos-editing-too {
 
-    float: left;
+    float: right;
     padding-top: 15px;
-    padding-left: 50px;
+
 }
 
 div#look-whos-editing-too img {
