@@ -97,6 +97,7 @@
 	  <ConfigFiles Include="$(CoreProjectDir)\App_Plugins\LookWhosEditingToo\*.*" />
 	  <ScriptsFiles Include="$(CoreProjectDir)\App_Plugins\LookWhosEditingToo\js\*.*" />
 	  <NuSpecFile Include="$(MSBuildProjectDirectory)\package.nuspec" />
+	  <NugetReadmeFile Include="$(MSBuildProjectDirectory)\readme.txt" />
     </ItemGroup>
     
 	<Copy SourceFiles="@(NuSpecFile)" DestinationFolder="$(BuildNuGetDir)" />
@@ -110,6 +111,8 @@
 	<Copy SourceFiles="@(SignalRBinFiles)"
     DestinationFiles="@(SignalRBinFiles->'$(BuildUmbDir)\bin\%(RecursiveDir)%(Filename)%(Extension)')" />
 
+	<Copy SourceFiles="@(NugetReadmeFile)" DestinationFolder="$(BuildNuGetDir)\" />
+	
 	<Copy SourceFiles="@(ConfigFiles)" DestinationFolder="$(BuildNuGetDir)\Content\App_Plugins\LookWhosEditingToo\" />
 	<Copy SourceFiles="@(ScriptsFiles)" DestinationFolder="$(BuildNuGetDir)\Content\App_Plugins\LookWhosEditingToo\js\" />
 	
