@@ -113,7 +113,7 @@
     DestinationFiles="@(SignalRBinFiles->'$(BuildUmbDir)\bin\%(RecursiveDir)%(Filename)%(Extension)')" />
 
 	<Copy SourceFiles="@(NugetReadmeFile)" DestinationFolder="$(BuildNuGetDir)\" />
-	<Copy SourceFiles="@(NugetXDTFile)" DestinationFolder="$(BuildNuGetDir)\" />
+	<Copy SourceFiles="@(NugetXDTFile)" DestinationFolder="$(BuildNuGetDir)\Content\" />
 	<Copy SourceFiles="@(ConfigFiles)" DestinationFolder="$(BuildNuGetDir)\Content\App_Plugins\LookWhosEditingToo\" />
 	<Copy SourceFiles="@(ScriptsFiles)" DestinationFolder="$(BuildNuGetDir)\Content\App_Plugins\LookWhosEditingToo\js\" />
 	
