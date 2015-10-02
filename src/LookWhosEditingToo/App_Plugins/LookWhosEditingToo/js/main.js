@@ -100,7 +100,7 @@ $(window).load(
 
         editing.client.broadcastEdit = function (nodeId, userId, userName, userGravatar) {
 
-            console.log(userName + " is now on node " + nodeId)
+            console.log(userName + " is now on node " + nodeId);
             if (_.where(allEdits, { userId: userId }).length > 0) {
 
                 var currentUserEdit = _.where(allEdits, { userId: userId })[0];
