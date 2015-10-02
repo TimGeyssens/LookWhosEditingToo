@@ -71,35 +71,36 @@ $(window).load(
 
             }
             else {
-                
+
                 $.connection.hub.start().done(function () {
-                    
+
                     var userId = parseInt($.cookie('lookWhosEditingTooUser').toString());
-                   
+
                     editing.server.stop(userId);
                     editingResource.deleteByUserId(userId);
-                   
+
                 });
 
             }
 
-            
+
         });
 
 
         editing.client.broadcastStopEdit = function (userId) {
 
             if (_.where(allEdits, { userId: userId }).length > 0) {
-               
+
                 allEdits = _.reject(allEdits, function (el) { return el.userId === userId; });
-          
+
                 updateTreeAndPage();
             }
         }
 
 
         editing.client.broadcastEdit = function (nodeId, userId, userName, userGravatar) {
-        
+
+            console.log(userName + " is now on node " + nodeId)
             if (_.where(allEdits, { userId: userId }).length > 0) {
 
                 var currentUserEdit = _.where(allEdits, { userId: userId })[0];

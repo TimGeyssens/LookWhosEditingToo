@@ -138,3 +138,29 @@ System.Web.Mvc.HttpAntiForgeryException (0x80004005): The provided anti-forgery 
  2015-10-02 12:11:04,669 [P7588/D2/T13] INFO  Umbraco.Web.Editors.AuthenticationController - User tim@nibble.be from IP address ::1 has logged out
  2015-10-02 12:11:08,803 [P7588/D2/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username tim@nibble.be from IP address ::1
  2015-10-02 12:11:17,800 [P7588/D2/T8] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2015-10-01 12:11:17
+ 2015-10-02 12:12:25,978 [P7588/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Explore' with Id '1068' has been published.
+ 2015-10-02 12:12:26,074 [P7588/D2/T33] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2015-10-02 12:12:26,108 [P7588/D2/T33] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 25ms)
+ 2015-10-02 12:12:30,300 [P7588/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2015-10-02 12:12:30,316 [P7588/D2/T21] INFO  umbraco.content - Saved Xml to file.
+ 2015-10-02 12:12:30,695 [P7588/D2/T32] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Explore' with Id '1068' has been published.
+ 2015-10-02 12:12:32,775 [P7588/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Explore' with Id '1068' has been published.
+ 2015-10-02 12:12:34,169 [P7588/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Explore' with Id '1068' has been published.
+ 2015-10-02 12:12:38,237 [P7588/D2/T8] INFO  umbraco.content - Save Xml to file...
+ 2015-10-02 12:12:38,237 [P7588/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2015-10-02 12:13:55,112 [P7588/D2/T24] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username john@doe.com from IP address ::1
+ 2015-10-02 12:13:55,193 [P7588/D2/T24] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:13:55,193 [P7588/D2/T24] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2015-10-02 12:14:20,394 [P7588/D2/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:14:20,394 [P7588/D2/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2015-10-02 12:16:33,095 [P7588/D2/T50] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:16:33,096 [P7588/D2/T50] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2015-10-02 12:17:44,876 [P7588/D2/T37] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:17:44,877 [P7588/D2/T37] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2015-10-02 12:17:48,356 [P7588/D2/T23] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:17:48,356 [P7588/D2/T23] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2015-10-02 12:19:11,757 [P7588/D2/T39] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username john@doe.com from IP address ::1
+ 2015-10-02 12:19:11,836 [P7588/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:19:11,836 [P7588/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2015-10-02 12:21:01,020 [P7588/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2015-10-02 12:21:01,020 [P7588/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
