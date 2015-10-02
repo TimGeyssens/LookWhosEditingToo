@@ -31,7 +31,7 @@ $(window).load(
                 }
 
                 if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId)
-                    $("#look-whos-editing-too").append("<img id='look-whos-editing-too-" + edit.userId + "'src='//www.gravatar.com/avatar/" + edit.userGravatar + ".jpg?s=30&d=mm' alt='" + edit.userName + "' >");
+                    $("#look-whos-editing-too").append("<img id='look-whos-editing-too-" + edit.userId + "'src='//www.gravatar.com/avatar/" + edit.userGravatar + ".jpg?s=30&d=mm' title='" + edit.userName + "' >");
 
             }
         }
