@@ -286,6 +286,7 @@
     <Content Include="App_Plugins\LookWhosEditingToo\js\jquery.cookie.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\jquery.signalR-2.2.0.min.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\main.js" />
+    <Content Include="App_Plugins\LookWhosEditingToo\js\notificationServiceWrapper.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\resource.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\style.css" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
