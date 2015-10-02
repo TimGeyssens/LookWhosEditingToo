@@ -283,6 +283,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\LookWhosEditingToo\js\controller.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\jquery.cookie.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\jquery.signalR-2.2.0.min.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\js\main.js" />
@@ -290,6 +291,7 @@
     <Content Include="App_Plugins\LookWhosEditingToo\js\resource.js" />
     <Content Include="App_Plugins\LookWhosEditingToo\style.css" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="App_Plugins\LookWhosEditingToo\views\dashboard.html" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.signalR-2.2.0.js" />
