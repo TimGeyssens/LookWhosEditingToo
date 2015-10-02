@@ -1,6 +1,7 @@
 ﻿function lookWhosEditingTooResource($http) {
 
     var apiRoot = "backoffice/LookWhosEditingToo/EditApi/";
+    var publicApiRoot = "LookWhosEditingToo/PublicEditApi/";
 
     return {
 
@@ -21,7 +22,7 @@
 
         deleteByUserId: function (userId) {
             if (userId != undefined)
-                return $http.delete(apiRoot + "DeleteByUserId?userId=" + userId);
+                return $http.delete(publicApiRoot + "DeleteByUserId?userId=" + userId);
         }
     };
 }

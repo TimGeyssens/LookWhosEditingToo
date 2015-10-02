@@ -73,6 +73,7 @@
   </baseType>
   <baseType type="Umbraco.Web.WebApi.UmbracoApiController" resolutionType="FindAllTypes">
     <add type="LookWhosEditingToo.Controllers.EditApiController, LookWhosEditingToo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="LookWhosEditingToo.Controllers.PublicEditApiController, LookWhosEditingToo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.AuthenticationController, umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.ContentController, umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.DashboardController, umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null" />
