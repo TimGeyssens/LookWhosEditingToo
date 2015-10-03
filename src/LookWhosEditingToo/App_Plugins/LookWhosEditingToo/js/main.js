@@ -9,6 +9,7 @@ $(window).load(
         var injector = angular.element('#umbracoMainPageBody').injector();
 
         var editingResource = injector.get('lookWhosEditingTooResource');
+        var notificationServiceWrapper = injector.get('lookWhosEditingTooNotificationServiceWrapper');
 
         function updateTreeAndPage() {
 
@@ -30,9 +31,10 @@ $(window).load(
                     $("ng-form[name='contentNameForm']").parent().parent().children(".span5").append("<div id='look-whos-editing-too'></div>");
                 }
 
-                if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId)
+                if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId) {
                     $("#look-whos-editing-too").append("<img id='look-whos-editing-too-" + edit.userId + "'src='//www.gravatar.com/avatar/" + edit.userGravatar + ".jpg?s=30&d=mm' title='" + edit.userName + "' >");
-
+                    notificationServiceWrapper.setCurrentEditNotification(edit);
+                }
             }
         }
 

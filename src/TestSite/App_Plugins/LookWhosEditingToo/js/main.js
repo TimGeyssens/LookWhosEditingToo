@@ -9,6 +9,7 @@ $(window).load(
         var injector = angular.element('#umbracoMainPageBody').injector();
 
         var editingResource = injector.get('lookWhosEditingTooResource');
+        var notificationServiceWrapper = injector.get('lookWhosEditingTooNotificationServiceWrapper');
 
         function updateTreeAndPage() {
 
@@ -30,9 +31,10 @@ $(window).load(
                     $("ng-form[name='contentNameForm']").parent().parent().children(".span5").append("<div id='look-whos-editing-too'></div>");
                 }
 
-                if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId)
+                if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId) {
                     $("#look-whos-editing-too").append("<img id='look-whos-editing-too-" + edit.userId + "'src='//www.gravatar.com/avatar/" + edit.userGravatar + ".jpg?s=30&d=mm' title='" + edit.userName + "' >");
-
+                    notificationServiceWrapper.setCurrentEditNotification(edit);
+                }
             }
         }
 
@@ -71,36 +73,36 @@ $(window).load(
 
             }
             else {
-                
+
                 $.connection.hub.start().done(function () {
-                    
+
                     var userId = parseInt($.cookie('lookWhosEditingTooUser').toString());
-                   
+
                     editing.server.stop(userId);
                     editingResource.deleteByUserId(userId);
-                   
+
                 });
 
             }
 
-            
+
         });
 
 
         editing.client.broadcastStopEdit = function (userId) {
 
             if (_.where(allEdits, { userId: userId }).length > 0) {
-               
+
                 allEdits = _.reject(allEdits, function (el) { return el.userId === userId; });
-          
+
                 updateTreeAndPage();
             }
         }
 
 
         editing.client.broadcastEdit = function (nodeId, userId, userName, userGravatar) {
-        
-            console.log(userName + " is now on node " + nodeId)
+
+            console.log(userName + " is now on node " + nodeId);
             if (_.where(allEdits, { userId: userId }).length > 0) {
 
                 var currentUserEdit = _.where(allEdits, { userId: userId })[0];
@@ -122,4 +124,4 @@ $(window).load(
         };
 
     }
-);
+);  

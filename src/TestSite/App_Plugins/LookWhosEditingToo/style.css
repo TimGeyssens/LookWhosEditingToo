@@ -9,13 +9,20 @@ div.look-whos-editing-too:before{
 }
 
 div#look-whos-editing-too {
-
     float: right;
     padding-top: 15px;
+}
 
+div.umb-pane > div#look-whos-editing-too {
+    float:none;
+    padding-right: 15px;
 }
 
 div#look-whos-editing-too img {
     border-radius: 16px;
     margin-left: 5px;
+}
+
+div.umb-pane > div#look-whos-editing-too img {
+    margin-right: 15px;
 }
