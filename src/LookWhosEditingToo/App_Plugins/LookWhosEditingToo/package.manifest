@@ -2,6 +2,7 @@
     "javascript" : [
         '~/App_Plugins/LookWhosEditingToo/js/main.js',
 		'~/App_Plugins/LookWhosEditingToo/js/resource.js',
+		'~/App_Plugins/LookWhosEditingToo/js/services.js',
 		'~/App_Plugins/LookWhosEditingToo/js/notificationServiceWrapper.js',
 		'~/App_Plugins/LookWhosEditingToo/js/controller.js',
 		'~/App_Plugins/LookWhosEditingToo/js/jquery.cookie.js',

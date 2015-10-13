@@ -9,6 +9,10 @@ function lookWhosEditingTooNotificationServiceWrapper(notificationsService) {
                     type: 'warning',
                     sticky: true
                 });
+        },
+
+        removeAll: function () {
+            notificationsService.removeAll();
         }
     };
 };

@@ -1,23 +1,40 @@
 ﻿using Microsoft.AspNet.SignalR;
+using Microsoft.AspNet.SignalR.Hubs;
+using System;
 using Umbraco.Core;
 
 namespace LookWhosEditingToo
 {
+    [HubName("LWETHub")] 
     public class EditingHub : Hub
     {
+        private const string LWETGroup = "LWETGroup";
+
+        public void Listen()
+        {
+            Groups.Add(Context.ConnectionId, LWETGroup);
+        }
+
         public void Send(int nodeId, int userId)
         {
-            
             var user = ApplicationContext.Current.Services.UserService.GetUserById(userId);
             var userGravatar = Utility.HashEmailForGravatar(user.Email);
             var userName = user.Name;
 
-            Clients.Others.broadcastEdit(nodeId, userId, userName, userGravatar);
+            var context = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
+            context.Clients.Group(LWETGroup).broadcastEdit(nodeId, userId, userName, userGravatar);
         }
 
         public void Stop(int userId)
         {
-            Clients.Others.broadcastStopEdit(userId);
+            var context = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
+            context.Clients.Group(LWETGroup).broadcastStopEdit(userId);
+        }
+
+        public void GreetAll()
+        {
+            var context = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
+            context.Clients.Group(LWETGroup).recieveMessage("Good morning! The time is " + DateTime.Now.ToString());
         }
     }
 }

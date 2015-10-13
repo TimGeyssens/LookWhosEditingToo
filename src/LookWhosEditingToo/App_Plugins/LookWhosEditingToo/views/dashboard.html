@@ -1,14 +1,18 @@
 <umb-panel ng-controller="LWET.DashboardController">
     <div class="umb-pane">
         <h1>These files are currently edited</h1>
+        <h2>{{text}}</h2>
+        <button class="btn btn-primary" ng-click="greetAll()">Greet all</button>
         <div id='look-whos-editing-too'>
-            <ul class="unstyled">
-                <li ng-repeat="edit in allEdits">
-                    <img id="look-whos-editing-too-{{edit.userId}}" src="//www.gravatar.com/avatar/{{edit.userGravatar}}.jpg?s=30&d=mm" title="{{edit.userName}}" />
-                    {{edit.userName}} is currently editing
-                    <a ng-href="#/content/content/edit/{{edit.nodeId}}"><b>"{{edit.nodeName}}"</b></a>
-                </li>
-            </ul>
+            <div class="span4 well" ng-repeat="(content, editors) in allEdits">
+                <i class="icon icon-home pull-left"></i>
+                <h1>blaaa</h1>
+                <ul class="unstyled">
+                    <li ng-repeat="editor in editors">
+                        <img id="look-whos-editing-too-{{editor.userId}}" src="//www.gravatar.com/avatar/{{editor.userGravatar}}.jpg?s=30&d=mm" title="{{editor.userName}}" />
+                    </li>
+                </ul>
+            </div>            
         </div>
     </div>
 </umb-panel>
