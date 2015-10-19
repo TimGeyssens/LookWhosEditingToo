@@ -4,7 +4,9 @@
     var initialize = function () {
 
         //Creating proxy
-        proxy = $.connection.LWETHub;
+        if(proxy == null){
+            proxy = $.connection.LWETHub;
+        }
 
         proxy.client.broadcastEdit = function (nodeId, userId, userName, userGravatar) {
             var newUserEdit = {};
@@ -25,10 +27,19 @@
         };
 
         //Starting connection
+<<<<<<< HEAD
         //$.connection.hub.logging = true;
         $.connection.hub.start().done(function () {
             proxy.server.listen();
         });
+=======
+        if(proxy.state === $.signalR.connectionState.disconnected){
+            $.connection.hub.logging = true;
+            $.connection.hub.start().done(function () {
+                proxy.server.listen();
+            });
+        }
+>>>>>>> origin/master
     };
 
     var sendRequest = function () {
