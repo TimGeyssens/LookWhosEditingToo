@@ -25,7 +25,7 @@
         };
 
         //Starting connection
-        $.connection.hub.logging = true;
+        //$.connection.hub.logging = true;
         $.connection.hub.start().done(function () {
             proxy.server.listen();
         });
