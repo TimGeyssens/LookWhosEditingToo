@@ -20,6 +20,16 @@ function lookWhosEditingTooNotificationServiceWrapper(notificationsService) {
                     sticky: true
                 });
         },
+        setPublisghedNotification: function (username, time) {
+            notificationsService
+                .add(
+                {
+                    headline: 'This node was just published at ' + time + ' by ',
+                    message: username,
+                    type: 'warning',
+                    sticky: true
+                });
+        },
         removeAll: function () {
             notificationsService.removeAll();
         }

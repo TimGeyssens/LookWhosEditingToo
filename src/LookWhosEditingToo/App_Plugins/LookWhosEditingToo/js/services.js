@@ -20,7 +20,13 @@
         proxy.client.broadcastStopEdit = function (userId) {
             $rootScope.$emit("broadcastStopEdit", userId);
         };
-
+        proxy.client.broadcastPublished = function(nodeId, username, time) {
+            var data = {};
+            data.nodeId = nodeId;
+            data.userName = username;
+            data.time = time;
+            $rootScope.$emit('broadcastPublished', data);
+        };
         //Publishing an event when server pushes a greeting message
         proxy.client.recieveMessage = function (message) {
             $rootScope.$emit('acceptGreet', message);

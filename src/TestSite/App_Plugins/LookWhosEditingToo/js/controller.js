@@ -46,7 +46,8 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
 angular.module("umbraco").controller("LWET.DashboardController", lwetDashboardController);
 
 function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, lookWhosEditingTooNotificationServiceWrapper, lwetSignalRService, $routeParams) {
-
+    var injector = angular.element('#umbracoMainPageBody').injector();
+    var authResource = injector.get('authResource');
     function updateTreeAndPage() {
 
         $("i[title*='content/content/edit']").closest("li").children("div").removeClass("look-whos-editing-too");
@@ -83,6 +84,17 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
         });
     }
 
+
+    $rootScope.$on("broadcastPublished", function (data, res) {
+        if ($routeParams.id == res.nodeId) {
+            authResource.getCurrentUser().then(function (user) {
+                if (user.name != res.userName) {
+                     lookWhosEditingTooNotificationServiceWrapper.setPublisghedNotification(res.userName, res.time);
+                }
+            });
+        }
+    });
+
     $rootScope.$on("broadcastStopEdit", function (userId) {
         if (_.where(allEdits, { userId: userId }).length > 0) {
             allEdits = _.reject(allEdits, function (el) { return el.userId === userId; });
@@ -113,8 +125,8 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     getAllEdits();
 
     lwetSignalRService.initialize();
-    var injector = angular.element('#umbracoMainPageBody').injector();
-    var authResource = injector.get('authResource');
+ 
+    //var authResource = injector.get('authResource');
     if (location.hash.indexOf('/content') == 1 && location.hash.indexOf('edit') !== -1) {
         authResource.getCurrentUser().then(function (user) {
             $.cookie('lookWhosEditingTooUser', user.id);

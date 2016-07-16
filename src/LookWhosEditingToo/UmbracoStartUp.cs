@@ -9,6 +9,7 @@ using System.Xml;
 using Microsoft.AspNet.SignalR;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Services;
+using Umbraco.Web;
 
 namespace LookWhosEditingToo
 {
@@ -21,8 +22,13 @@ namespace LookWhosEditingToo
 
         private void ContentService_Published(Umbraco.Core.Publishing.IPublishingStrategy sender, Umbraco.Core.Events.PublishEventArgs<Umbraco.Core.Models.IContent> e)
         {
-            //var hubContext = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
-            //hubContext.Clients.Group("LWETGroup").broadcastEdit(1068, 5, "hahah", "8");
+            var userName = UmbracoContext.Current.Security.CurrentUser.Username;
+            var hubContext = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
+            foreach (var node in e.PublishedEntities)
+            {
+                hubContext.Clients.Group("LWETGroup")
+                    .broadcastPublished(node.Id, userName, DateTime.Now.ToString("HH:mm:ss"));
+            }
         }
         protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
