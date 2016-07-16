@@ -1,11 +1,10 @@
-function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource, contentResource, lwetSignalRService) {
+function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource, contentResource, lwetSignalRService, lookWhosEditingTooNotificationServiceWrapper) {
 
     $scope.text = "";
     $scope.allEdits = [];
-
+    $scope.globalMessage = "";
     lookWhosEditingTooResource.getAllEdits().then(function (response) {
         $scope.allEdits = _.groupBy(response.data, "nodeId");
-        console.log($scope.allEdits);
     });
 
     $scope.getIcon = function (id) {
@@ -21,11 +20,17 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
     };
 
     $scope.greetAll = function () {
-        lwetSignalRService.sendRequest();
+        if ($scope.globalMessage.length > 0) {
+            lwetSignalRService.sendRequest($scope.globalMessage);
+            $scope.redBorder = "";
+            $scope.globalMessage = "";
+        } else {
+            $scope.redBorder = "redBorder";
+        }
     }
 
     updateGreetingMessage = function (text) {
-        $scope.text = text;
+        lookWhosEditingTooNotificationServiceWrapper.setGlobalNotification(text);
     }
 
     lwetSignalRService.initialize();
@@ -33,14 +38,14 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
     //Updating greeting message after receiving a message through the event
     $rootScope.$on("acceptGreet", function (e, message) {
         $scope.$apply(function () {
-            updateGreetingMessage(message)
+            updateGreetingMessage(message);
         });
     });
 };
 
 angular.module("umbraco").controller("LWET.DashboardController", lwetDashboardController);
 
-function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, lookWhosEditingTooNotificationServiceWrapper, lwetSignalRService) {
+function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, lookWhosEditingTooNotificationServiceWrapper, lwetSignalRService, $routeParams) {
 
     function updateTreeAndPage() {
 
@@ -52,6 +57,8 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
             currentNodeId = locArray[locArray.length - 1];
         }
 
+
+
         $("#look-whos-editing-too").empty();
 
         for (var i = 0; i < allEdits.length; i++) {
@@ -59,7 +66,7 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
             $("i[title*='" + edit.nodeId + "']").closest("li").children("div").addClass("look-whos-editing-too");
 
             if ($("#look-whos-editing-too").length == 0) {
-                $("ng-form[name='contentNameForm']").parent().parent().children(".span5").append("<div id='look-whos-editing-too'></div>");
+                $("ng-form[name='headerNameForm']").parent().parent().children(".btn-group.pull-right").append("<div id='look-whos-editing-too'></div>");
             }
 
             if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId) {
@@ -70,13 +77,9 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     }
 
     function getAllEdits() {
-
         lookWhosEditingTooResource.getAllEdits().then(function (resp) {
-
             allEdits = resp.data;
-
             updateTreeAndPage();
-
         });
     }
 
@@ -110,6 +113,19 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     getAllEdits();
 
     lwetSignalRService.initialize();
+    var injector = angular.element('#umbracoMainPageBody').injector();
+    var authResource = injector.get('authResource');
+    if (location.hash.indexOf('/content') == 1 && location.hash.indexOf('edit') !== -1) {
+        authResource.getCurrentUser().then(function (user) {
+            $.cookie('lookWhosEditingTooUser', user.id);
+            lookWhosEditingTooResource.setEdit($routeParams.id, user.id).then(function (resp) {
+            });
+        });
+    } else {
+        lookWhosEditingTooResource.deleteByUserId(user.id).then(function (resp) {
+        });
+    }
+
 };
 
 angular.module("umbraco").controller("LWET.ContentController", lwetContentController);
