@@ -31,10 +31,10 @@ namespace LookWhosEditingToo
             context.Clients.Group(LWETGroup).broadcastStopEdit(userId);
         }
 
-        public void GreetAll(string message)
+        public void GreetAll(string userName, string message)
         {
             var context = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
-            context.Clients.Group(LWETGroup).recieveMessage(message);
+            context.Clients.Group(LWETGroup).recieveMessage(userName, message);
         }
     }
 }

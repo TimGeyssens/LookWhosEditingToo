@@ -10,17 +10,17 @@ function lookWhosEditingTooNotificationServiceWrapper(notificationsService) {
                     sticky: false
                 });
         },
-        setGlobalNotification: function (message) {
+        setGlobalNotification: function (userName, message) {
             notificationsService
                 .add(
                 {
-                    headline: 'Message From User ',
+                    headline: 'Message From ' + userName,
                     message: message,
                     type: 'info',
                     sticky: true
                 });
         },
-        setPublisghedNotification: function (username, time) {
+        setPublishedNotification: function (username, time) {
             notificationsService
                 .add(
                 {

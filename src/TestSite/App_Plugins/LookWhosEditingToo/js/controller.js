@@ -20,25 +20,30 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
     };
 
     $scope.greetAll = function () {
+
         if ($scope.globalMessage.length > 0) {
-            lwetSignalRService.sendRequest($scope.globalMessage);
-            $scope.redBorder = "";
-            $scope.globalMessage = "";
+            var injector = angular.element('#umbracoMainPageBody').injector();
+            var authResource = injector.get('authResource');
+            authResource.getCurrentUser().then(function(user) {
+                lwetSignalRService.sendRequest(user.name, $scope.globalMessage);
+                $scope.redBorder = "";
+                $scope.globalMessage = "";
+            });
         } else {
             $scope.redBorder = "redBorder";
         }
     }
 
-    updateGreetingMessage = function (text) {
-        lookWhosEditingTooNotificationServiceWrapper.setGlobalNotification(text);
+    updateGreetingMessage = function (userName, message) {
+        lookWhosEditingTooNotificationServiceWrapper.setGlobalNotification(userName, message);
     }
 
     lwetSignalRService.initialize();
 
     //Updating greeting message after receiving a message through the event
-    $rootScope.$on("acceptGreet", function (e, message) {
+    $rootScope.$on("acceptGreet", function (e, data) {
         $scope.$apply(function () {
-            updateGreetingMessage(message);
+            updateGreetingMessage(data.userName, data.message);
         });
     });
 };
@@ -89,7 +94,7 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
         if ($routeParams.id == res.nodeId) {
             authResource.getCurrentUser().then(function (user) {
                 if (user.name != res.userName) {
-                     lookWhosEditingTooNotificationServiceWrapper.setPublisghedNotification(res.userName, res.time);
+                     lookWhosEditingTooNotificationServiceWrapper.setPublishedNotification(res.userName, res.time);
                 }
             });
         }
