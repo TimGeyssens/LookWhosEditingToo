@@ -1,11 +1,10 @@
-function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource, contentResource, lwetSignalRService) {
+function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource, contentResource, lwetSignalRService, lookWhosEditingTooNotificationServiceWrapper) {
 
     $scope.text = "";
     $scope.allEdits = [];
-
-    lookWhosEditingTooResource.getAllEdits().then(function (response) {
+    $scope.globalMessage = "";
+    lookWhosEditingTooResource.getAllEdits(true).then(function (response) {
         $scope.allEdits = _.groupBy(response.data, "nodeId");
-        console.log($scope.allEdits);
     });
 
     $scope.getIcon = function (id) {
@@ -21,27 +20,39 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
     };
 
     $scope.greetAll = function () {
-        lwetSignalRService.sendRequest();
+
+        if ($scope.globalMessage.length > 0) {
+            var injector = angular.element('#umbracoMainPageBody').injector();
+            var authResource = injector.get('authResource');
+            authResource.getCurrentUser().then(function(user) {
+                lwetSignalRService.sendRequest(user.name, $scope.globalMessage);
+                $scope.redBorder = "";
+                $scope.globalMessage = "";
+            });
+        } else {
+            $scope.redBorder = "redBorder";
+        }
     }
 
-    updateGreetingMessage = function (text) {
-        $scope.text = text;
+    updateGreetingMessage = function (userName, message) {
+        lookWhosEditingTooNotificationServiceWrapper.setGlobalNotification(userName, message);
     }
 
     lwetSignalRService.initialize();
 
     //Updating greeting message after receiving a message through the event
-    $rootScope.$on("acceptGreet", function (e, message) {
+    $rootScope.$on("acceptGreet", function (e, data) {
         $scope.$apply(function () {
-            updateGreetingMessage(message)
+            updateGreetingMessage(data.userName, data.message);
         });
     });
 };
 
 angular.module("umbraco").controller("LWET.DashboardController", lwetDashboardController);
 
-function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, lookWhosEditingTooNotificationServiceWrapper, lwetSignalRService) {
-
+function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, lookWhosEditingTooNotificationServiceWrapper, lwetSignalRService, $routeParams) {
+    var injector = angular.element('#umbracoMainPageBody').injector();
+    var authResource = injector.get('authResource');
     function updateTreeAndPage() {
 
         $("i[title*='content/content/edit']").closest("li").children("div").removeClass("look-whos-editing-too");
@@ -52,6 +63,8 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
             currentNodeId = locArray[locArray.length - 1];
         }
 
+
+
         $("#look-whos-editing-too").empty();
 
         for (var i = 0; i < allEdits.length; i++) {
@@ -59,7 +72,7 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
             $("i[title*='" + edit.nodeId + "']").closest("li").children("div").addClass("look-whos-editing-too");
 
             if ($("#look-whos-editing-too").length == 0) {
-                $("ng-form[name='contentNameForm']").parent().parent().children(".span5").append("<div id='look-whos-editing-too'></div>");
+                $("ng-form[name='headerNameForm']").parent().parent().children(".btn-group.pull-right").append("<div id='look-whos-editing-too'></div>");
             }
 
             if ($("#look-whos-editing-too-" + edit.userId).length == 0 && currentNodeId == edit.nodeId) {
@@ -70,15 +83,22 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     }
 
     function getAllEdits() {
-
-        lookWhosEditingTooResource.getAllEdits().then(function (resp) {
-
+        lookWhosEditingTooResource.getAllEdits(false).then(function (resp) {
             allEdits = resp.data;
-
             updateTreeAndPage();
-
         });
     }
+
+
+    $rootScope.$on("broadcastPublished", function (data, res) {
+        if ($routeParams.id == res.nodeId) {
+            authResource.getCurrentUser().then(function (user) {
+                if (user.name != res.userName) {
+                     lookWhosEditingTooNotificationServiceWrapper.setPublishedNotification(res.userName, res.time);
+                }
+            });
+        }
+    });
 
     $rootScope.$on("broadcastStopEdit", function (userId) {
         if (_.where(allEdits, { userId: userId }).length > 0) {
@@ -110,11 +130,17 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     getAllEdits();
 
     lwetSignalRService.initialize();
-
-    if (location.hash.indexOf('/content') == 1 && location.hash.indexOf('edit') != -1) {
-        //Set current edit in database and cookie
+ 
+    //var authResource = injector.get('authResource');
+    if (location.hash.indexOf('/content') == 1 && location.hash.indexOf('edit') !== -1) {
+        authResource.getCurrentUser().then(function (user) {
+            $.cookie('lookWhosEditingTooUser', user.id);
+            lookWhosEditingTooResource.setEdit($routeParams.id, user.id).then(function (resp) {
+            });
+        });
     } else {
-        //Delete current edit in database and remove cookie
+        lookWhosEditingTooResource.deleteByUserId(user.id).then(function (resp) {
+        });
     }
 
 };

@@ -1,33 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using LookWhosEditingToo.Models;
 using Umbraco.Core;
 using Umbraco.Core.Persistence;
 using Umbraco.Web.Trees;
 using System.Web.Hosting;
 using System.Xml;
+using Microsoft.AspNet.SignalR;
 using Umbraco.Core.Logging;
+using Umbraco.Core.Services;
+using Umbraco.Web;
 
 namespace LookWhosEditingToo
 {
-    public class UmbracoStartUp: ApplicationEventHandler
+    public class UmbracoStartUp : ApplicationEventHandler
     {
+        public UmbracoStartUp()
+        {
+            ContentService.Published += ContentService_Published;
+        }
+
+        private void ContentService_Published(Umbraco.Core.Publishing.IPublishingStrategy sender, Umbraco.Core.Events.PublishEventArgs<Umbraco.Core.Models.IContent> e)
+        {
+            var userName = UmbracoContext.Current.Security.CurrentUser.Username;
+            var hubContext = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
+            foreach (var node in e.PublishedEntities)
+            {
+                hubContext.Clients.Group("LWETGroup")
+                    .broadcastPublished(node.Id, userName, DateTime.Now.ToString("HH:mm:ss"));
+            }
+        }
         protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
-
             TreeControllerBase.TreeNodesRendering += TreeControllerBase_TreeNodesRendering;
-
-            var db = applicationContext.DatabaseContext.Database;
-
+            var ctx = ApplicationContext.Current.DatabaseContext;
+            var db = new DatabaseSchemaHelper(ctx.Database, applicationContext.ProfilingLogger.Logger, ctx.SqlSyntax);
             //Check if the DB table does NOT exist
             if (!db.TableExist("LookWhosEditingNow"))
             {
                 //Create DB table - and set overwrite to false
                 db.CreateTable<Edit>(false);
             }
-
             //Install dashboard
             AddStartUpSectionDashboard();
         }
@@ -53,59 +66,39 @@ namespace LookWhosEditingToo
             }
         }
 
-        public void AddStartUpSectionDashboard()
+        private void AddStartUpSectionDashboard()
         {
-            bool saveFile = false;
-
             //Open up language file
-            var dashboardPath = "~/config/dashboard.config";
-
+            const string dashboardPath = "~/config/dashboard.config";
             //Path to the file resolved
             var dashboardFilePath = HostingEnvironment.MapPath(dashboardPath);
-
             //Load dashboard.config XML file
-            XmlDocument dashboardXml = new XmlDocument();
-
+            var dashboardXml = new XmlDocument();
             try
             {
                 dashboardXml.Load(dashboardFilePath);
-
                 // Section Node
-                XmlNode findSection = dashboardXml.SelectSingleNode("//section [@alias='StartupDashboardSection']");
-
+                var findSection = dashboardXml.SelectSingleNode("//section [@alias='StartupDashboardSection']");
                 //Couldn't find it
-                if (findSection == null)
-                {
-                    //Content section is not found - something is really bad!
-                    return;
-                }
-                else
-                {
-
-                    //Check if our dashboard is already added
-                    XmlNode customTab = findSection.SelectSingleNode("//tab [@caption='Look Whos Editing Too']");
-
-                    if (customTab == null)
-                    {
-                        var xmlToAdd = "<tab caption='Look Whos Editing Too'>" +
-                                            "<control addPanel='true' panelCaption=''>/App_Plugins/LookWhosEditingToo/views/dashboard.html</control>" +
+                if (findSection == null) return;
+                //Check if our dashboard is already added
+                var customTab = findSection.SelectSingleNode("//tab [@caption='Look Whos Editing Too']");
+                if (customTab != null) return;
+                const string xmlToAdd = "<tab caption='Look Whos Editing Too'>" +
+                                        "<control addPanel='true' panelCaption=''>/App_Plugins/LookWhosEditingToo/views/dashboard.html</control>" +
                                         "</tab>";
-
-                        //Load in the XML string above
-                        XmlDocument xmlNodeToAdd = new XmlDocument();
-                        xmlNodeToAdd.LoadXml(xmlToAdd);
-
-                        //Append the xml above to the dashboard node
-                        try
-                        {
-                            var copiedNode = dashboardXml.ImportNode(xmlNodeToAdd.DocumentElement, true);
-                            findSection.AppendChild(copiedNode);
-                            //Save the file flag to true
-                            dashboardXml.Save(dashboardFilePath);
-                        }
-                        catch (Exception ex) { LogHelper.Error<UmbracoStartUp>("Couldn't add content section dashboard", ex); }
-                    }
+                //Load in the XML string above
+                var xmlNodeToAdd = new XmlDocument();
+                xmlNodeToAdd.LoadXml(xmlToAdd);
+                //Append the xml above to the dashboard node
+                try
+                {
+                    var copiedNode = dashboardXml.ImportNode(xmlNodeToAdd.DocumentElement, true);
+                    findSection.AppendChild(copiedNode);
+                    //Save the file flag to true
+                    dashboardXml.Save(dashboardFilePath);
                 }
+                catch (Exception ex) { LogHelper.Error<UmbracoStartUp>("Couldn't add content section dashboard", ex); }
             }
             catch (Exception ex)
             {

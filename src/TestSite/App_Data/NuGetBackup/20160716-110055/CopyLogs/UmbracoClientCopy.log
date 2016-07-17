@@ -1,0 +1,1235 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 16 July 2016 11:02:21
+   Source : D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\
+     Dest : D:\GitHub\LookWhosEditingToo\src\TestSite\Umbraco_Client\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /IS /IT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\
+	*EXTRA Dir        -1	D:\GitHub\LookWhosEditingToo\src\TestSite\Umbraco_Client\GenericProperty\
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Application\
+	    Older     		   13503	Extensions.js  0%  100%  
+	    Older     		    2417	HistoryManager.js  0%  100%  
+	    Older     		     839	NamespaceManager.js  0%  100%  
+	    Older     		   21956	UmbracoApplicationActions.js  0%  100%  
+	    Older     		   12833	UmbracoClientManager.js  0%  100%  
+	    Older     		     374	UmbracoUtils.js  0%  100%  
+	    Older     		    2060	UrlEncoder.js  0%  100%  
+	                  12	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Application\JQuery\
+	    Older     		    2057	jquery-fieldselection.js  0%  100%  
+	    Older     		   30336	jquery.autocomplete.js  0%  100%  
+	    Older     		    5928	jquery.ba-bbq.min.js  0%  100%  
+	    Older     		    4344	jquery.cookie.js  0%  100%  
+	    Older     		    3178	jquery.hotkeys.js  0%  100%  
+	    Older     		    6992	jquery.idle-timer.js  0%  100%  
+	    Older     		    1304	jquery.metadata.min.js  0%  100%  
+	    Older     		     165	jquery.noconflict-invoke.js  0%  100%  
+	    Older     		    2749	jquery.unobtrusive-ajax.min.js  0%  100%  
+	    Older     		   21496	jquery.validate.min.js  0%  100%  
+	    Older     		    3745	jquery.validate.unobtrusive.min.js  0%  100%  
+	    Older     		     255	VerticalAlign.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\CodeArea\
+	    Older     		    6126	javascript.js  0%  100%  
+	    Older     		     305	styles.css  0%  100%  
+	    Older     		    6997	UmbracoEditor.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Colorpicker\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Colorpicker\Css\
+	    Older     		    3367	colorpicker.css  0%  100%  
+	                  26	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Colorpicker\Images\
+	    Older     		      49	blank.gif  0%  100%  
+	    Older     		    1897	colorpicker_background.png  0%  100%  
+	    Older     		     532	colorpicker_hex.png  0%  100%  
+	    Older     		     970	colorpicker_hsb_b.png  0%  100%  
+	    Older     		    1012	colorpicker_hsb_h.png  0%  100%  
+	    Older     		    1171	colorpicker_hsb_s.png  0%  100%  
+	    Older     		      86	colorpicker_indic.gif  0%  100%  
+	    Older     		   10355	colorpicker_overlay.png  0%  100%  
+	    Older     		     970	colorpicker_rgb_b.png  0%  100%  
+	    Older     		    1069	colorpicker_rgb_g.png  0%  100%  
+	    Older     		    1066	colorpicker_rgb_r.png  0%  100%  
+	    Older     		      78	colorpicker_select.gif  0%  100%  
+	    Older     		     984	colorpicker_submit.png  0%  100%  
+	    Older     		    1916	custom_background.png  0%  100%  
+	    Older     		     562	custom_hex.png  0%  100%  
+	    Older     		    1097	custom_hsb_b.png  0%  100%  
+	    Older     		     970	custom_hsb_h.png  0%  100%  
+	    Older     		    1168	custom_hsb_s.png  0%  100%  
+	    Older     		      86	custom_indic.gif  0%  100%  
+	    Older     		    1008	custom_rgb_b.png  0%  100%  
+	    Older     		    1069	custom_rgb_g.png  0%  100%  
+	    Older     		    1018	custom_rgb_r.png  0%  100%  
+	    Older     		     997	custom_submit.png  0%  100%  
+	    Older     		     506	select.png  0%  100%  
+	    Older     		     518	select2.png  0%  100%  
+	    Older     		     315	slider.png  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Colorpicker\Js\
+	    Older     		   17175	colorpicker.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\ContextMenu\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\ContextMenu\Css\
+	    Older     		    4026	jquery.contextMenu.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\ContextMenu\Js\
+	    Older     		   62773	jquery.contextMenu.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Datepicker\
+	                  10	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Datepicker\Aqua\
+	    Older     		      89	active-bg.gif  0%  100%  
+	    Older     		      85	dark-bg.gif  0%  100%  
+	    Older     		      89	hover-bg.gif  0%  100%  
+	    Older     		      49	menuarrow.gif  0%  100%  
+	    Older     		     110	normal-bg.gif  0%  100%  
+	    Older     		     110	rowhover-bg.gif  0%  100%  
+	    Older     		     116	status-bg.gif  0%  100%  
+	    Older     		    4941	theme.css  0%  100%  
+	    Older     		     116	title-bg.gif  0%  100%  
+	    Older     		    1122	today-bg.gif  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Datepicker\Images\
+	    Older     		     674	calPickerIcon.png  0%  100%  
+	    Older     		     633	calPickerIconHover.png  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\DateTimePicker\
+	    Older     		   20315	datetimepicker.css  0%  100%  
+	    Older     		   13311	timepicker.js  0%  100%  
+	    Older     		    1939	umbDateTimePicker.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\DateTimePicker\Images\
+	    Older     		    1110	calSprite.png  0%  100%  
+	    Older     		    8673	ui-icons_666666_256x240.png  0%  100%  
+	    Older     		    8641	ui-icons_999999_256x240.png  0%  100%  
+	                  10	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Dialogs\
+	    Older     		     362	AssignDomain2.css  0%  100%  
+	    Older     		    5353	AssignDomain2.js  0%  100%  
+	    Older     		     212	CreateDialog.css  0%  100%  
+	    Older     		     316	EditMacro.css  0%  100%  
+	    Older     		    7379	EditMacro.js  0%  100%  
+	    Older     		     362	PublishDialog.css  0%  100%  
+	    Older     		    3481	PublishDialog.js  0%  100%  
+	    Older     		    1171	SortDialog.css  0%  100%  
+	    Older     		    4674	SortDialog.js  0%  100%  
+	    Older     		    6012	UmbracoField.js  0%  100%  
+	                   9	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Editors\
+	  *EXTRA File 		    3506	EditContentType.js
+	    Older     		     486	DirectoryBrowser.css  0%  100%  
+	    Older     		     703	EditMacro.css  0%  100%  
+	    Older     		    3039	EditMacroScripts.js  0%  100%  
+	    Older     		    4183	EditScript.js  0%  100%  
+	    Older     		    3796	EditStyleSheet.js  0%  100%  
+	    Older     		    6263	EditTemplate.js  0%  100%  
+	    Older     		   11378	EditView.js  0%  100%  
+	    Older     		     161	EditXslt.css  0%  100%  
+	    Older     		    3008	EditXslt.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\FileUploader\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\FileUploader\Js\
+	    Older     		   16856	jquery.fileUploader.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\FolderBrowser\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\FolderBrowser\Css\
+	    Older     		    5366	folderbrowser.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\FolderBrowser\Js\
+	    Older     		   18681	folderbrowser.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\IconPicker\
+	    Older     		      52	iconpicker.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Imagecropper\
+	    Older     		     329	Jcrop.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Images\
+	    Older     		   10819	progressbar.gif  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Installer\
+	                   5	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Installer\Css\
+	    Older     		   23469	all.css  0%  100%  
+	    Older     		    1314	form.css  0%  100%  
+	    Older     		   20078	jquery-ui-1.8.6.custom.css  0%  100%  
+	    Older     		    7958	lt7.css  0%  100%  
+	    Older     		     967	reset.css  0%  100%  
+	                  98	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Installer\Images\
+	    Older     		   19424	bg-bhuiness-cl.gif  0%  100%  
+	    Older     		   46684	bg-bhuiness-cr.gif  0%  100%  
+	    Older     		  184850	bg-bhuiness.jpg  0%   70%  100%  
+	    Older     		   18564	bg-blog-cl.gif  0%  100%  
+	    Older     		   50756	bg-blog-cr.gif  0%  100%  
+	    Older     		   11078	bg-blog-repeat.jpg  0%  100%  
+	    Older     		  187609	bg-blog.jpg  0%   69%  100%  
+	    Older     		     387	bg-drop-b.png  0%  100%  
+	    Older     		      84	bg-drop-c.gif  0%  100%  
+	    Older     		     391	bg-drop-t.png  0%  100%  
+	    Older     		     158	bg-header.png  0%  100%  
+	    Older     		    3915	bg-img-ie.png  0%  100%  
+	    Older     		    2452	bg-img.png  0%  100%  
+	    Older     		     866	bg-inp-big.png  0%  100%  
+	    Older     		     616	bg-inp-error.png  0%  100%  
+	    Older     		     621	bg-inp.png  0%  100%  
+	    Older     		     283	bg-lightbox-b.png  0%  100%  
+	    Older     		     296	bg-lightbox-t.png  0%  100%  
+	    Older     		   18097	bg-normal-cl.gif  0%  100%  
+	    Older     		   46703	bg-normal-cr.gif  0%  100%  
+	    Older     		    9811	bg-normal-repeat.jpg  0%  100%  
+	    Older     		  178356	bg-normal.jpg  0%   73%  100%  
+	    Older     		     366	bg-paging-h.png  0%  100%  
+	    Older     		     346	bg-paging.png  0%  100%  
+	    Older     		   18097	bg-personal-cl.gif  0%  100%  
+	    Older     		   46703	bg-personal-cr.gif  0%  100%  
+	    Older     		    9811	bg-personal-repeat.jpg  0%  100%  
+	    Older     		  178356	bg-personal.jpg  0%   73%  100%  
+	    Older     		   17705	bg-simple-cl.gif  0%  100%  
+	    Older     		   42137	bg-simple-cr.gif  0%  100%  
+	    Older     		   12773	bg-simple-repeat.jpg  0%  100%  
+	    Older     		  216794	bg-simple.jpg  0%   60%  100%  
+	    Older     		    6059	btn-accept.png  0%  100%  
+	    Older     		    2708	btn-back.png  0%  100%  
+	    Older     		   22650	btn-blog.png  0%  100%  
+	    Older     		   16942	btn-buisness-repeat.png  0%  100%  
+	    Older     		   26481	btn-buisness.png  0%  100%  
+	    Older     		    1682	btn-close.png  0%  100%  
+	    Older     		    3113	btn-confirm.png  0%  100%  
+	    Older     		    3500	btn-continue.png  0%  100%  
+	    Older     		    2243	btn-create-hover.png  0%  100%  
+	    Older     		    4277	btn-create.png  0%  100%  
+	    Older     		    6109	btn-get.png  0%  100%  
+	    Older     		    6446	btn-install-gal.png  0%  100%  
+	    Older     		    1484	btn-install-hover.png  0%  100%  
+	    Older     		    2789	btn-install.png  0%  100%  
+	    Older     		     952	btn-next.png  0%  100%  
+	    Older     		   25962	btn-no-thanks.png  0%  100%  
+	    Older     		    1898	btn-no.png  0%  100%  
+	    Older     		   30788	btn-personal.png  0%  100%  
+	    Older     		     958	btn-prev.png  0%  100%  
+	    Older     		    7219	btn-preview-web.png  0%  100%  
+	    Older     		    8978	btn-preview.png  0%  100%  
+	    Older     		    6976	btn-set.png  0%  100%  
+	    Older     		   28477	btn-simple.png  0%  100%  
+	    Older     		    2380	btn-yes.png  0%  100%  
+	    Older     		     205	bul1.png  0%  100%  
+	    Older     		      46	bul2.gif  0%  100%  
+	    Older     		     240	bul3.png  0%  100%  
+	    Older     		      74	bul4.gif  0%  100%  
+	    Older     		     467	ico-invalidaing.png  0%  100%  
+	    Older     		     437	ico-validaing.png  0%  100%  
+	    Older     		    3189	img01.jpg  0%  100%  
+	    Older     		    3533	img02.jpg  0%  100%  
+	    Older     		    6205	img03.jpg  0%  100%  
+	    Older     		    5029	img04.jpg  0%  100%  
+	    Older     		    6113	img05.jpg  0%  100%  
+	    Older     		    4408	img06.jpg  0%  100%  
+	    Older     		    5924	img07.jpg  0%  100%  
+	    Older     		    4535	img08.jpg  0%  100%  
+	    Older     		   16018	img09.jpg  0%  100%  
+	    Older     		    4173	img10.jpg  0%  100%  
+	    Older     		    6618	img11.jpg  0%  100%  
+	    Older     		    2113	loader.gif  0%  100%  
+	    Older     		    1445	logo.gif  0%  100%  
+	    Older     		      43	none.gif  0%  100%  
+	    Older     		  304064	pbar-ani.gif  0%   43%   86%  100%  
+	    Older     		    1026	pbar.gif  0%  100%  
+	    Older     		     491	select-button.png  0%  100%  
+	    Older     		     199	select-center.png  0%  100%  
+	    Older     		     816	select-left-2.png  0%  100%  
+	    Older     		     401	select-left.png  0%  100%  
+	    Older     		     110	sep1.png  0%  100%  
+	    Older     		     260	ui-bg_diagonals-thick_18_b81900_40x40.png  0%  100%  
+	    Older     		     251	ui-bg_diagonals-thick_20_666666_40x40.png  0%  100%  
+	    Older     		     178	ui-bg_flat_10_000000_40x100.png  0%  100%  
+	    Older     		     104	ui-bg_glass_100_f6f6f6_1x400.png  0%  100%  
+	    Older     		     125	ui-bg_glass_100_fdf5ce_1x400.png  0%  100%  
+	    Older     		     105	ui-bg_glass_65_ffffff_1x400.png  0%  100%  
+	    Older     		    3762	ui-bg_gloss-wave_35_f6a828_500x100.png  0%  100%  
+	    Older     		      90	ui-bg_highlight-soft_100_eeeeee_1x100.png  0%  100%  
+	    Older     		     129	ui-bg_highlight-soft_75_ffe45c_1x100.png  0%  100%  
+	    Older     		    4369	ui-icons_222222_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_228ef1_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ef8c08_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ffd27a_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ffffff_256x240.png  0%  100%  
+	    Older     		    1207	zoom-in.png  0%  100%  
+	                   5	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Installer\Js\
+	    Older     		    7058	ie-png.js  0%  100%  
+	    Older     		   94332	jquery.1.4.4.js  0%  100%  
+	    Older     		   62130	jquery.main.js  0%  100%  
+	    Older     		   19146	jquery.ui.selectmenu.js  0%  100%  
+	    Older     		    9543	PackageInstaller.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Jeditable\
+	    Older     		   24034	jquery.jeditable.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\MacroContainer\
+	    Older     		     666	macroContainer.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\MaskedInput\
+	    Older     		    4028	jquery.maskedinput-1.3.min.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Menuicon\
+	    Older     		     571	style.css  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Menuicon\Images\
+	    Older     		     273	buttonbg.gif  0%  100%  
+	    Older     		     273	buttonbgdown.gif  0%  100%  
+	    Older     		     851	split.gif  0%  100%  
+	                   5	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Modal\
+	    Older     		   24841	jquery.simplemodal.1.4.1.custom.js  0%  100%  
+	    Older     		   20733	modal.js  0%  100%  
+	    Older     		     475	modalBackground.gif  0%  100%  
+	    Older     		     151	modalGradiant.gif  0%  100%  
+	    Older     		    1417	style.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Mousewheel\
+	    Older     		    1638	jquery.mousewheel.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Panel\
+	    Older     		     240	javascript.js  0%  100%  
+	    Older     		    2608	style.css  0%  100%  
+	                   6	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Panel\Images\
+	    Older     		      98	panel_bg.gif  0%  100%  
+	    Older     		      43	panel_boxfooter_bg.gif  0%  100%  
+	    Older     		     162	panel_boxfooter_statusBar_bg.gif  0%  100%  
+	    Older     		     164	panel_boxfooter_statusBar_h2_bg.gif  0%  100%  
+	    Older     		     194	panel_boxhead_bg.gif  0%  100%  
+	    Older     		     193	panel_boxhead_h2_bg.gif  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Preview\
+	    Older     		    3508	previewModeBadge.png  0%  100%  
+	    Older     		     169	umbracoPreview.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\ProgressBar\
+	    Older     		     795	javascript.js  0%  100%  
+	    Older     		     524	style.css  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\ProgressBar\Images\
+	    Older     		     314	container_left.gif  0%  100%  
+	    Older     		     102	container_right.gif  0%  100%  
+	    Older     		     113	indicator.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Propertypane\
+	    Older     		    2000	style.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Propertypane\Images\
+	    Older     		    9038	propertyBackground.gif  0%  100%  
+	    Older     		     554	proppane_bg.png  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\PunyCode\
+	    Older     		    2802	punycode.min.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Scrollingmenu\
+	    Older     		    2851	javascript.js  0%  100%  
+	    Older     		     255	style.css  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Scrollingmenu\Images\
+	    Older     		     834	arrawBack.gif  0%  100%  
+	    Older     		     834	arrowForward.gif  0%  100%  
+	    Older     		     183	background.gif  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Scrollingmenu\Images\Button\
+	    Older     		     273	buttonbg.gif  0%  100%  
+	    Older     		     273	buttonbgdown.gif  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\SimpleEditor\
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\SimpleEditor\Images\
+	    Older     		      78	bold.gif  0%  100%  
+	    Older     		      73	italic.gif  0%  100%  
+	    Older     		     108	link.gif  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Splitbutton\
+	    Older     		    2246	InsertMacroSplitButton.js  0%  100%  
+	    Older     		   18462	jquery.splitbutton.js  0%  100%  
+	    Older     		    2773	splitbutton.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Splitbutton\Images\
+	    Older     		     130	splitbutton_downarrow.png  0%  100%  
+	    Older     		     149	splitbutton_hover.png  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tablesorting\
+	    Older     		   16523	jquery.tablesorter.min.js  0%  100%  
+	    Older     		   18249	tableDragAndDrop.js  0%  100%  
+	    Older     		   23499	tableFilter.js  0%  100%  
+	    Older     		   12838	tableFilterUtill.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tablesorting\img\
+	    Older     		     830	asc.gif  0%  100%  
+	    Older     		      73	bg.gif  0%  100%  
+	    Older     		     833	desc.gif  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tabview\
+	    Older     		    3721	javascript.js  0%  100%  
+	    Older     		    1589	oldstyle.css  0%  100%  
+	    Older     		    2633	style.css  0%  100%  
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tabview\Images\
+	    Older     		     169	background.gif  0%  100%  
+	    Older     		      73	bg.gif  0%  100%  
+	    Older     		      43	footer_bg.gif  0%  100%  
+	    Older     		     162	footer_statusBar_bg.gif  0%  100%  
+	    Older     		     164	footer_statusBar_h2_bg.gif  0%  100%  
+	    Older     		    1343	left_both.gif  0%  100%  
+	    Older     		    3913	right_both.gif  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tags\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tags\Css\
+	    Older     		    1117	jquery.tagsinput.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tags\Js\
+	    Older     		   11891	jquery.tagsinput.js  0%  100%  
+	    Older     		    6400	jquery.tagsinput.min.js  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\
+	    Older     		   26930	license.txt  0%  100%  
+	    Older     		  232483	tiny_mce.js  0%   56%  100%  
+	    Older     		    4912	tiny_mce_popup.js  0%  100%  
+	    Older     		  524361	tiny_mce_src.js  0%   49%   99%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Langs\
+	    Older     		    7049	da.js  0%  100%  
+	    Older     		    7251	de.js  0%  100%  
+	    Older     		    6515	en.js  0%  100%  
+	    Older     		    6518	en_us.js  0%  100%  
+	    Older     		    7711	fi.js  0%  100%  
+	    Older     		    7765	fr.js  0%  100%  
+	    Older     		   15279	he.js  0%  100%  
+	    Older     		    7010	it.js  0%  100%  
+	    Older     		   11301	ja.js  0%  100%  
+	    Older     		    6635	nl.js  0%  100%  
+	    Older     		    6958	no.js  0%  100%  
+	    Older     		    7897	pl.js  0%  100%  
+	    Older     		    7053	pt.js  0%  100%  
+	    Older     		   19794	ru.js  0%  100%  
+	    Older     		    6966	sv.js  0%  100%  
+	    Older     		    8432	zh.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advhr\
+	    Older     		     847	editor_plugin.js  0%  100%  
+	    Older     		    1442	editor_plugin_src.js  0%  100%  
+	    Older     		    2422	rule.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advhr\Css\
+	    Older     		     240	advhr.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advhr\Js\
+	    Older     		    1322	rule.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advhr\Langs\
+	    Older     		     127	da_dlg.js  0%  100%  
+	    Older     		     129	de_dlg.js  0%  100%  
+	    Older     		     117	en_dlg.js  0%  100%  
+	    Older     		     120	en_us_dlg.js  0%  100%  
+	    Older     		     128	fi_dlg.js  0%  100%  
+	    Older     		     129	fr_dlg.js  0%  100%  
+	    Older     		     225	he_dlg.js  0%  100%  
+	    Older     		     138	it_dlg.js  0%  100%  
+	    Older     		     146	ja_dlg.js  0%  100%  
+	    Older     		     126	nl_dlg.js  0%  100%  
+	    Older     		     127	no_dlg.js  0%  100%  
+	    Older     		     150	pl_dlg.js  0%  100%  
+	    Older     		     120	pt_dlg.js  0%  100%  
+	    Older     		     342	ru_dlg.js  0%  100%  
+	    Older     		     125	sv_dlg.js  0%  100%  
+	    Older     		     142	zh_dlg.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advimage\
+	    Older     		     791	editor_plugin.js  0%  100%  
+	    Older     		    1391	editor_plugin_src.js  0%  100%  
+	    Older     		   12086	image.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advimage\Css\
+	    Older     		     672	advimage.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advimage\Img\
+	    Older     		    1624	sample.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advimage\Js\
+	    Older     		   12909	image.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advimage\Langs\
+	    Older     		    1352	da_dlg.js  0%  100%  
+	    Older     		    1363	de_dlg.js  0%  100%  
+	    Older     		    1270	en_dlg.js  0%  100%  
+	    Older     		    1273	en_us_dlg.js  0%  100%  
+	    Older     		    1387	fi_dlg.js  0%  100%  
+	    Older     		    1508	fr_dlg.js  0%  100%  
+	    Older     		    2771	he_dlg.js  0%  100%  
+	    Older     		    1467	it_dlg.js  0%  100%  
+	    Older     		    2319	ja_dlg.js  0%  100%  
+	    Older     		    1267	nl_dlg.js  0%  100%  
+	    Older     		    1312	no_dlg.js  0%  100%  
+	    Older     		    1467	pl_dlg.js  0%  100%  
+	    Older     		    1374	pt_dlg.js  0%  100%  
+	    Older     		    4924	ru_dlg.js  0%  100%  
+	    Older     		    1266	sv_dlg.js  0%  100%  
+	    Older     		    1761	zh_dlg.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advlink\
+	    Older     		     973	editor_plugin.js  0%  100%  
+	    Older     		    1633	editor_plugin_src.js  0%  100%  
+	    Older     		   16123	link.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advlink\Css\
+	    Older     		     480	advlink.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advlink\Js\
+	    Older     		   17341	advlink.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advlink\Langs\
+	    Older     		    1944	da_dlg.js  0%  100%  
+	    Older     		    1955	de_dlg.js  0%  100%  
+	    Older     		    1667	en_dlg.js  0%  100%  
+	    Older     		    1670	en_us_dlg.js  0%  100%  
+	    Older     		    1985	fi_dlg.js  0%  100%  
+	    Older     		    2120	fr_dlg.js  0%  100%  
+	    Older     		    4332	he_dlg.js  0%  100%  
+	    Older     		    1864	it_dlg.js  0%  100%  
+	    Older     		    3274	ja_dlg.js  0%  100%  
+	    Older     		    1710	nl_dlg.js  0%  100%  
+	    Older     		    1871	no_dlg.js  0%  100%  
+	    Older     		    2012	pl_dlg.js  0%  100%  
+	    Older     		    1962	pt_dlg.js  0%  100%  
+	    Older     		    5662	ru_dlg.js  0%  100%  
+	    Older     		    1846	sv_dlg.js  0%  100%  
+	    Older     		    2326	zh_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Advlist\
+	    Older     		    2324	editor_plugin.js  0%  100%  
+	    Older     		    4726	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Autolink\
+	    Older     		    2355	editor_plugin.js  0%  100%  
+	    Older     		    5492	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Autoresize\
+	    Older     		    1506	editor_plugin.js  0%  100%  
+	    Older     		    4158	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Autosave\
+	    Older     		    3584	editor_plugin.js  0%  100%  
+	    Older     		   13766	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Autosave\Langs\
+	    Older     		     256	en.js  0%  100%  
+	    Older     		     259	en_us.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Bbcode\
+	    Older     		    3231	editor_plugin.js  0%  100%  
+	    Older     		    4361	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Contextmenu\
+	    Older     		    2540	editor_plugin.js  0%  100%  
+	    Older     		    5227	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Directionality\
+	    Older     		    1259	editor_plugin.js  0%  100%  
+	    Older     		    2189	editor_plugin_src.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Emotions\
+	    Older     		     676	editor_plugin.js  0%  100%  
+	    Older     		    1220	editor_plugin_src.js  0%  100%  
+	    Older     		    5972	emotions.htm  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Emotions\Img\
+	    Older     		     354	smiley-cool.gif  0%  100%  
+	    Older     		     329	smiley-cry.gif  0%  100%  
+	    Older     		     331	smiley-embarassed.gif  0%  100%  
+	    Older     		     342	smiley-foot-in-mouth.gif  0%  100%  
+	    Older     		     340	smiley-frown.gif  0%  100%  
+	    Older     		     336	smiley-innocent.gif  0%  100%  
+	    Older     		     338	smiley-kiss.gif  0%  100%  
+	    Older     		     343	smiley-laughing.gif  0%  100%  
+	    Older     		     321	smiley-money-mouth.gif  0%  100%  
+	    Older     		     323	smiley-sealed.gif  0%  100%  
+	    Older     		     344	smiley-smile.gif  0%  100%  
+	    Older     		     338	smiley-surprised.gif  0%  100%  
+	    Older     		     328	smiley-tongue-out.gif  0%  100%  
+	    Older     		     337	smiley-undecided.gif  0%  100%  
+	    Older     		     350	smiley-wink.gif  0%  100%  
+	    Older     		     336	smiley-yell.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Emotions\Js\
+	    Older     		    1120	emotions.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Emotions\Langs\
+	    Older     		     463	da_dlg.js  0%  100%  
+	    Older     		     478	de_dlg.js  0%  100%  
+	    Older     		     421	en_dlg.js  0%  100%  
+	    Older     		     424	en_us_dlg.js  0%  100%  
+	    Older     		     532	fi_dlg.js  0%  100%  
+	    Older     		     513	fr_dlg.js  0%  100%  
+	    Older     		     999	he_dlg.js  0%  100%  
+	    Older     		     472	it_dlg.js  0%  100%  
+	    Older     		     738	ja_dlg.js  0%  100%  
+	    Older     		     459	nl_dlg.js  0%  100%  
+	    Older     		     446	no_dlg.js  0%  100%  
+	    Older     		     529	pl_dlg.js  0%  100%  
+	    Older     		     468	pt_dlg.js  0%  100%  
+	    Older     		    1380	ru_dlg.js  0%  100%  
+	    Older     		     496	sv_dlg.js  0%  100%  
+	    Older     		     456	zh_dlg.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Example\
+	    Older     		     908	dialog.htm  0%  100%  
+	    Older     		     860	editor_plugin.js  0%  100%  
+	    Older     		    2988	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Example\Img\
+	    Older     		      87	example.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Example\Js\
+	    Older     		     609	dialog.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Example\Langs\
+	    Older     		      79	en.js  0%  100%  
+	    Older     		      82	en_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\example_dependency\
+	    Older     		     419	editor_plugin.js  0%  100%  
+	    Older     		    1885	editor_plugin_src.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Fullpage\
+	    Older     		    6322	editor_plugin.js  0%  100%  
+	    Older     		   11568	editor_plugin_src.js  0%  100%  
+	    Older     		   10754	fullpage.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Fullpage\Css\
+	    Older     		    2188	fullpage.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Fullpage\Js\
+	    Older     		    8164	fullpage.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Fullpage\Langs\
+	    Older     		    2347	da_dlg.js  0%  100%  
+	    Older     		    2469	de_dlg.js  0%  100%  
+	    Older     		    2297	en_dlg.js  0%  100%  
+	    Older     		    2300	en_us_dlg.js  0%  100%  
+	    Older     		    2541	fi_dlg.js  0%  100%  
+	    Older     		    2864	fr_dlg.js  0%  100%  
+	    Older     		    4260	he_dlg.js  0%  100%  
+	    Older     		    2520	it_dlg.js  0%  100%  
+	    Older     		    3802	ja_dlg.js  0%  100%  
+	    Older     		    2365	nl_dlg.js  0%  100%  
+	    Older     		    2359	no_dlg.js  0%  100%  
+	    Older     		    2712	pl_dlg.js  0%  100%  
+	    Older     		    2387	pt_dlg.js  0%  100%  
+	    Older     		    6193	ru_dlg.js  0%  100%  
+	    Older     		    2499	sv_dlg.js  0%  100%  
+	    Older     		    2863	zh_dlg.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Fullscreen\
+	    Older     		    4422	editor_plugin.js  0%  100%  
+	    Older     		    8222	editor_plugin_src.js  0%  100%  
+	    Older     		    3655	fullscreen.htm  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Iespell\
+	    Older     		     909	editor_plugin.js  0%  100%  
+	    Older     		    1484	editor_plugin_src.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\
+	    Older     		   11928	editor_plugin.js  0%  100%  
+	    Older     		   19657	editor_plugin_src.js  0%  100%  
+	    Older     		   12878	template.htm  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\Skins\
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\Skins\Clearlooks2\
+	    Older     		    6715	window.css  0%  100%  
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\Skins\Clearlooks2\Img\
+	    Older     		     810	alert.gif  0%  100%  
+	    Older     		     272	button.gif  0%  100%  
+	    Older     		    1195	buttons.gif  0%  100%  
+	    Older     		     907	confirm.gif  0%  100%  
+	    Older     		     909	corners.gif  0%  100%  
+	    Older     		     769	horizontal.gif  0%  100%  
+	    Older     		      84	vertical.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\Skins\Umbraco\
+	    Older     		    4816	window.css  0%  100%  
+	                   8	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Inlinepopups\Skins\Umbraco\Img\
+	    Older     		     818	alert.gif  0%  100%  
+	    Older     		     280	button.gif  0%  100%  
+	    Older     		    1195	buttons.gif  0%  100%  
+	    Older     		    3728	close.png  0%  100%  
+	    Older     		     915	confirm.gif  0%  100%  
+	    Older     		     569	corners.gif  0%  100%  
+	    Older     		     436	horizontal.gif  0%  100%  
+	    Older     		     140	vertical.gif  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Insertdatetime\
+	    Older     		    1931	editor_plugin.js  0%  100%  
+	    Older     		    2860	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Layer\
+	    Older     		    4052	editor_plugin.js  0%  100%  
+	    Older     		    6747	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Legacyoutput\
+	    Older     		    2086	editor_plugin.js  0%  100%  
+	    Older     		    5077	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Lists\
+	    Older     		   14380	editor_plugin.js  0%  100%  
+	    Older     		   32531	editor_plugin_src.js  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Media\
+	    Older     		   12655	editor_plugin.js  0%  100%  
+	    Older     		   26419	editor_plugin_src.js  0%  100%  
+	    Older     		   38852	media.htm  0%  100%  
+	    Older     		   19980	moxieplayer.swf  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Media\Css\
+	    Older     		    1357	media.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Media\Js\
+	    Older     		    1938	embed.js  0%  100%  
+	    Older     		   16473	media.js  0%  100%  
+	                  18	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Media\Langs\
+	    Older     		    3077	da_dlg.js  0%  100%  
+	    Older     		    3164	de_dlg.js  0%  100%  
+	    Older     		    2815	en_dlg.js  0%  100%  
+	    Older     		    2818	en_us_dlg.js  0%  100%  
+	    Older     		    3018	es_dlg.js  0%  100%  
+	    Older     		    3314	fi_dlg.js  0%  100%  
+	    Older     		    3302	fr_dlg.js  0%  100%  
+	    Older     		    5399	he_dlg.js  0%  100%  
+	    Older     		    3062	it_dlg.js  0%  100%  
+	    Older     		    5047	ja_dlg.js  0%  100%  
+	    Older     		    2734	ko_dlg.js  0%  100%  
+	    Older     		    2949	nl_dlg.js  0%  100%  
+	    Older     		    3047	no_dlg.js  0%  100%  
+	    Older     		    3259	pl_dlg.js  0%  100%  
+	    Older     		    3259	pt_dlg.js  0%  100%  
+	    Older     		    9433	ru_dlg.js  0%  100%  
+	    Older     		    2962	sv_dlg.js  0%  100%  
+	    Older     		    3445	zh_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Nonbreaking\
+	    Older     		     944	editor_plugin.js  0%  100%  
+	    Older     		    1521	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Noneditable\
+	    Older     		    5431	editor_plugin.js  0%  100%  
+	    Older     		   17154	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Pagebreak\
+	    Older     		    1402	editor_plugin.js  0%  100%  
+	    Older     		    2161	editor_plugin_src.js  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Paste\
+	    Older     		   13713	editor_plugin.js  0%  100%  
+	    Older     		   31674	editor_plugin_src.js  0%  100%  
+	    Older     		    1209	pastetext.htm  0%  100%  
+	    Older     		     783	pasteword.htm  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Paste\Js\
+	    Older     		     884	pastetext.js  0%  100%  
+	    Older     		    1647	pasteword.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Paste\Langs\
+	    Older     		     227	da_dlg.js  0%  100%  
+	    Older     		     262	de_dlg.js  0%  100%  
+	    Older     		     226	en_dlg.js  0%  100%  
+	    Older     		     229	en_us_dlg.js  0%  100%  
+	    Older     		     245	fi_dlg.js  0%  100%  
+	    Older     		     276	fr_dlg.js  0%  100%  
+	    Older     		     610	he_dlg.js  0%  100%  
+	    Older     		     252	it_dlg.js  0%  100%  
+	    Older     		     517	ja_dlg.js  0%  100%  
+	    Older     		     209	nl_dlg.js  0%  100%  
+	    Older     		     256	no_dlg.js  0%  100%  
+	    Older     		     263	pl_dlg.js  0%  100%  
+	    Older     		     190	pt_dlg.js  0%  100%  
+	    Older     		     633	ru_dlg.js  0%  100%  
+	    Older     		     284	sv_dlg.js  0%  100%  
+	    Older     		     258	zh_dlg.js  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Preview\
+	    Older     		    1051	editor_plugin.js  0%  100%  
+	    Older     		    1641	editor_plugin_src.js  0%  100%  
+	    Older     		     731	example.html  0%  100%  
+	    Older     		     630	preview.html  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Preview\Jscripts\
+	    Older     		    1938	embed.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Print\
+	    Older     		     492	editor_plugin.js  0%  100%  
+	    Older     		     881	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Save\
+	    Older     		    1569	editor_plugin.js  0%  100%  
+	    Older     		    2529	editor_plugin_src.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Searchreplace\
+	    Older     		    1046	editor_plugin.js  0%  100%  
+	    Older     		    1795	editor_plugin_src.js  0%  100%  
+	    Older     		    5334	searchreplace.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Searchreplace\Css\
+	    Older     		     176	searchreplace.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Searchreplace\Js\
+	    Older     		    3878	searchreplace.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Searchreplace\Langs\
+	    Older     		     461	da_dlg.js  0%  100%  
+	    Older     		     522	de_dlg.js  0%  100%  
+	    Older     		     445	en_dlg.js  0%  100%  
+	    Older     		     448	en_us_dlg.js  0%  100%  
+	    Older     		     468	fi_dlg.js  0%  100%  
+	    Older     		     584	fr_dlg.js  0%  100%  
+	    Older     		    1056	he_dlg.js  0%  100%  
+	    Older     		     473	it_dlg.js  0%  100%  
+	    Older     		     755	ja_dlg.js  0%  100%  
+	    Older     		     488	nl_dlg.js  0%  100%  
+	    Older     		     475	no_dlg.js  0%  100%  
+	    Older     		     602	pl_dlg.js  0%  100%  
+	    Older     		     489	pt_dlg.js  0%  100%  
+	    Older     		    1262	ru_dlg.js  0%  100%  
+	    Older     		     535	sv_dlg.js  0%  100%  
+	    Older     		     633	zh_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Spellchecker\
+	    Older     		    7217	editor_plugin.js  0%  100%  
+	    Older     		   12791	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Spellchecker\Css\
+	    Older     		      98	content.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Spellchecker\Img\
+	    Older     		      46	wline.gif  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Style\
+	    Older     		    1117	editor_plugin.js  0%  100%  
+	    Older     		    1927	editor_plugin_src.js  0%  100%  
+	    Older     		   38494	props.htm  0%  100%  
+	    Older     		    1030	readme.txt  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Style\Css\
+	    Older     		     906	props.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Style\Js\
+	    Older     		   32355	props.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Style\Langs\
+	    Older     		    1689	da_dlg.js  0%  100%  
+	    Older     		    1824	de_dlg.js  0%  100%  
+	    Older     		    1627	en_dlg.js  0%  100%  
+	    Older     		    1630	en_us_dlg.js  0%  100%  
+	    Older     		    1762	fi_dlg.js  0%  100%  
+	    Older     		    1723	fr_dlg.js  0%  100%  
+	    Older     		    3246	he_dlg.js  0%  100%  
+	    Older     		    1718	it_dlg.js  0%  100%  
+	    Older     		    2436	ja_dlg.js  0%  100%  
+	    Older     		    1652	nl_dlg.js  0%  100%  
+	    Older     		    1648	no_dlg.js  0%  100%  
+	    Older     		    1916	pl_dlg.js  0%  100%  
+	    Older     		    1684	pt_dlg.js  0%  100%  
+	    Older     		    4509	ru_dlg.js  0%  100%  
+	    Older     		    1700	sv_dlg.js  0%  100%  
+	    Older     		    2005	zh_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Tabfocus\
+	    Older     		    1666	editor_plugin.js  0%  100%  
+	    Older     		    3057	editor_plugin_src.js  0%  100%  
+	                   6	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Table\
+	    Older     		    7292	cell.htm  0%  100%  
+	    Older     		   17667	editor_plugin.js  0%  100%  
+	    Older     		   40915	editor_plugin_src.js  0%  100%  
+	    Older     		    1508	merge_cells.htm  0%  100%  
+	    Older     		    6263	row.htm  0%  100%  
+	    Older     		    9035	table.htm  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Table\Css\
+	    Older     		     205	cell.css  0%  100%  
+	    Older     		     306	row.css  0%  100%  
+	    Older     		     170	table.css  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Table\Js\
+	    Older     		    9458	cell.js  0%  100%  
+	    Older     		     566	merge_cells.js  0%  100%  
+	    Older     		    7775	row.js  0%  100%  
+	    Older     		   15534	table.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Table\Langs\
+	    Older     		    2262	da_dlg.js  0%  100%  
+	    Older     		    2462	de_dlg.js  0%  100%  
+	    Older     		    2092	en_dlg.js  0%  100%  
+	    Older     		    2095	en_us_dlg.js  0%  100%  
+	    Older     		    2516	fi_dlg.js  0%  100%  
+	    Older     		    2694	fr_dlg.js  0%  100%  
+	    Older     		    4748	he_dlg.js  0%  100%  
+	    Older     		    2301	it_dlg.js  0%  100%  
+	    Older     		    3631	ja_dlg.js  0%  100%  
+	    Older     		    2199	nl_dlg.js  0%  100%  
+	    Older     		    2247	no_dlg.js  0%  100%  
+	    Older     		    2653	pl_dlg.js  0%  100%  
+	    Older     		    2285	pt_dlg.js  0%  100%  
+	    Older     		    6724	ru_dlg.js  0%  100%  
+	    Older     		    2189	sv_dlg.js  0%  100%  
+	    Older     		    2859	zh_dlg.js  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Template\
+	    Older     		     332	blank.htm  0%  100%  
+	    Older     		    3302	editor_plugin.js  0%  100%  
+	    Older     		    4986	editor_plugin_src.js  0%  100%  
+	    Older     		    1441	template.htm  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Template\Css\
+	    Older     		     275	template.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Template\Js\
+	    Older     		    2777	template.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Template\Langs\
+	    Older     		     670	da_dlg.js  0%  100%  
+	    Older     		     662	de_dlg.js  0%  100%  
+	    Older     		     627	en_dlg.js  0%  100%  
+	    Older     		     630	en_us_dlg.js  0%  100%  
+	    Older     		     756	fi_dlg.js  0%  100%  
+	    Older     		     731	fr_dlg.js  0%  100%  
+	    Older     		    1065	he_dlg.js  0%  100%  
+	    Older     		     693	it_dlg.js  0%  100%  
+	    Older     		    1041	ja_dlg.js  0%  100%  
+	    Older     		     670	nl_dlg.js  0%  100%  
+	    Older     		     651	no_dlg.js  0%  100%  
+	    Older     		     688	pl_dlg.js  0%  100%  
+	    Older     		     694	pt_dlg.js  0%  100%  
+	    Older     		    2076	ru_dlg.js  0%  100%  
+	    Older     		     670	sv_dlg.js  0%  100%  
+	    Older     		     989	zh_dlg.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracocontextmenu\
+	    Older     		    2561	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracocss\
+	    Older     		     991	dialog.htm  0%  100%  
+	    Older     		    8362	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracocss\Img\
+	    Older     		      87	example.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracocss\Js\
+	    Older     		     609	dialog.js  0%  100%  
+	                  14	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracocss\Langs\
+	    Older     		      79	en.js  0%  100%  
+	    Older     		      82	en_dlg.js  0%  100%  
+	    Older     		      82	en_us.js  0%  100%  
+	    Older     		      85	en_us_dlg.js  0%  100%  
+	    Older     		      67	it.js  0%  100%  
+	    Older     		      71	it_dlg.js  0%  100%  
+	    Older     		      92	ja.js  0%  100%  
+	    Older     		      84	ja_dlg.js  0%  100%  
+	    Older     		      96	ru.js  0%  100%  
+	    Older     		     105	ru_dlg.js  0%  100%  
+	    Older     		      76	sv.js  0%  100%  
+	    Older     		      93	sv_dlg.js  0%  100%  
+	    Older     		      67	zh.js  0%  100%  
+	    Older     		      72	zh_dlg.js  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoembed\
+	    Older     		    3816	dialog.htm  0%  100%  
+	    Older     		     860	editor_plugin.js  0%  100%  
+	    Older     		    2984	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoembed\Img\
+	    Older     		    1928	ajax-loader.gif  0%  100%  
+	    Older     		     260	embed.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoembed\Js\
+	    Older     		    3260	dialog.js  0%  100%  
+	                  18	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoembed\Langs\
+	    Older     		      85	da.js  0%  100%  
+	    Older     		     251	da_dlg.js  0%  100%  
+	    Older     		     272	de.js  0%  100%  
+	    Older     		     272	de_dlg.js  0%  100%  
+	    Older     		      78	en.js  0%  100%  
+	    Older     		     232	en_dlg.js  0%  100%  
+	    Older     		      81	en_us.js  0%  100%  
+	    Older     		     235	en_us_dlg.js  0%  100%  
+	    Older     		     236	it.js  0%  100%  
+	    Older     		     244	it_dlg.js  0%  100%  
+	    Older     		     267	ja.js  0%  100%  
+	    Older     		     268	ja_dlg.js  0%  100%  
+	    Older     		     329	ru.js  0%  100%  
+	    Older     		     329	ru_dlg.js  0%  100%  
+	    Older     		     260	sv.js  0%  100%  
+	    Older     		     260	sv_dlg.js  0%  100%  
+	    Older     		     235	zh.js  0%  100%  
+	    Older     		     235	zh_dlg.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoimg\
+	    Older     		    1739	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoimg\Js\
+	    Older     		   10412	image.js  0%  100%  
+	                   8	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoimg\Langs\
+	    Older     		    1495	en_dlg.js  0%  100%  
+	    Older     		    1498	en_us_dlg.js  0%  100%  
+	    Older     		    1495	he_dlg.js  0%  100%  
+	    Older     		    1583	it_dlg.js  0%  100%  
+	    Older     		    1694	ja_dlg.js  0%  100%  
+	    Older     		    2314	ru_dlg.js  0%  100%  
+	    Older     		    1536	sv_dlg.js  0%  100%  
+	    Older     		    1346	zh_dlg.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracolink\
+	    Older     		    1860	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracolink\Js\
+	    Older     		   17755	umbracolink.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracolink\Langs\
+	    Older     		    1944	da_dlg.js  0%  100%  
+	    Older     		    1955	de_dlg.js  0%  100%  
+	    Older     		    1667	en_dlg.js  0%  100%  
+	    Older     		    1670	en_us_dlg.js  0%  100%  
+	    Older     		    1985	fi_dlg.js  0%  100%  
+	    Older     		    2120	fr_dlg.js  0%  100%  
+	    Older     		    4332	he_dlg.js  0%  100%  
+	    Older     		    1864	it_dlg.js  0%  100%  
+	    Older     		    3274	ja_dlg.js  0%  100%  
+	    Older     		    1710	nl_dlg.js  0%  100%  
+	    Older     		    1871	no_dlg.js  0%  100%  
+	    Older     		    2012	pl_dlg.js  0%  100%  
+	    Older     		    1962	pt_dlg.js  0%  100%  
+	    Older     		    2727	ru_dlg.js  0%  100%  
+	    Older     		    1846	sv_dlg.js  0%  100%  
+	    Older     		    2326	zh_dlg.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracomacro\
+	    Older     		     991	dialog.htm  0%  100%  
+	    Older     		    6151	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracomacro\Img\
+	    Older     		     603	insMacro.gif  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracomacro\Js\
+	    Older     		     609	dialog.js  0%  100%  
+	                  14	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracomacro\Langs\
+	    Older     		      69	en.js  0%  100%  
+	    Older     		      82	en_dlg.js  0%  100%  
+	    Older     		      72	en_us.js  0%  100%  
+	    Older     		      85	en_us_dlg.js  0%  100%  
+	    Older     		      79	he.js  0%  100%  
+	    Older     		      82	he_dlg.js  0%  100%  
+	    Older     		      75	ja.js  0%  100%  
+	    Older     		      90	ja_dlg.js  0%  100%  
+	    Older     		      86	ru.js  0%  100%  
+	    Older     		      81	ru_dlg.js  0%  100%  
+	    Older     		      69	sv.js  0%  100%  
+	    Older     		      92	sv_dlg.js  0%  100%  
+	    Older     		      66	zh.js  0%  100%  
+	    Older     		      72	zh_dlg.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracopaste\
+	    Older     		    1753	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Umbracoshortcut\
+	    Older     		    1255	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Visualblocks\
+	    Older     		     958	editor_plugin.js  0%  100%  
+	    Older     		    1712	editor_plugin_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Visualblocks\Css\
+	    Older     		    3040	visualblocks.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Visualchars\
+	    Older     		    1368	editor_plugin.js  0%  100%  
+	    Older     		    2195	editor_plugin_src.js  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Wordcount\
+	    Older     		    1960	editor_plugin.js  0%  100%  
+	    Older     		    3331	editor_plugin_src.js  0%  100%  
+	                   8	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Xhtmlxtras\
+	    Older     		    6243	abbr.htm  0%  100%  
+	    Older     		    6258	acronym.htm  0%  100%  
+	    Older     		    6232	attributes.htm  0%  100%  
+	    Older     		    6243	cite.htm  0%  100%  
+	    Older     		    7294	del.htm  0%  100%  
+	    Older     		    2756	editor_plugin.js  0%  100%  
+	    Older     		    4098	editor_plugin_src.js  0%  100%  
+	    Older     		    7299	ins.htm  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Xhtmlxtras\Css\
+	    Older     		     197	attributes.css  0%  100%  
+	    Older     		     514	popup.css  0%  100%  
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Xhtmlxtras\Js\
+	    Older     		     541	abbr.js  0%  100%  
+	    Older     		     559	acronym.js  0%  100%  
+	    Older     		    3471	attributes.js  0%  100%  
+	    Older     		     541	cite.js  0%  100%  
+	    Older     		    1356	del.js  0%  100%  
+	    Older     		    7159	element_common.js  0%  100%  
+	    Older     		    1356	ins.js  0%  100%  
+	                  16	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Plugins\Xhtmlxtras\Langs\
+	    Older     		    1194	da_dlg.js  0%  100%  
+	    Older     		    1141	de_dlg.js  0%  100%  
+	    Older     		    1092	en_dlg.js  0%  100%  
+	    Older     		    1095	en_us_dlg.js  0%  100%  
+	    Older     		    1214	fi_dlg.js  0%  100%  
+	    Older     		    1195	fr_dlg.js  0%  100%  
+	    Older     		    2222	he_dlg.js  0%  100%  
+	    Older     		    1181	it_dlg.js  0%  100%  
+	    Older     		    1531	ja_dlg.js  0%  100%  
+	    Older     		    1149	nl_dlg.js  0%  100%  
+	    Older     		    1147	no_dlg.js  0%  100%  
+	    Older     		    1159	pl_dlg.js  0%  100%  
+	    Older     		    1140	pt_dlg.js  0%  100%  
+	    Older     		    2564	ru_dlg.js  0%  100%  
+	    Older     		    1157	sv_dlg.js  0%  100%  
+	    Older     		    1372	zh_dlg.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\
+	                  10	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\
+	    Older     		    2701	about.htm  0%  100%  
+	    Older     		    1167	anchor.htm  0%  100%  
+	    Older     		    2251	charmap.htm  0%  100%  
+	    Older     		    3317	color_picker.htm  0%  100%  
+	    Older     		   26734	editor_template.js  0%  100%  
+	    Older     		   43419	editor_template_src.js  0%  100%  
+	    Older     		    4038	image.htm  0%  100%  
+	    Older     		    2527	link.htm  0%  100%  
+	    Older     		    1732	shortcuts.htm  0%  100%  
+	    Older     		    1269	source_editor.htm  0%  100%  
+	                  11	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Img\
+	    Older     		    2584	colorpicker.jpg  0%  100%  
+	    Older     		     239	flash.gif  0%  100%  
+	    Older     		   11982	icons.gif  0%  100%  
+	    Older     		     600	iframe.gif  0%  100%  
+	    Older     		     325	pagebreak.gif  0%  100%  
+	    Older     		     301	quicktime.gif  0%  100%  
+	    Older     		     439	realmedia.gif  0%  100%  
+	    Older     		     384	shockwave.gif  0%  100%  
+	    Older     		      43	trans.gif  0%  100%  
+	    Older     		     597	video.gif  0%  100%  
+	    Older     		     415	windowsmedia.gif  0%  100%  
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Js\
+	    Older     		    2203	about.js  0%  100%  
+	    Older     		    1498	anchor.js  0%  100%  
+	    Older     		   15793	charmap.js  0%  100%  
+	    Older     		   14559	color_picker.js  0%  100%  
+	    Older     		    6391	image.js  0%  100%  
+	    Older     		    4947	link.js  0%  100%  
+	    Older     		    1694	source_editor.js  0%  100%  
+	                  28	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Langs\
+	    Older     		    2547	da.js  0%  100%  
+	    Older     		    2201	da_dlg.js  0%  100%  
+	    Older     		    2623	de.js  0%  100%  
+	    Older     		    2152	de_dlg.js  0%  100%  
+	    Older     		    2341	en.js  0%  100%  
+	    Older     		    1981	en_dlg.js  0%  100%  
+	    Older     		    2767	fi.js  0%  100%  
+	    Older     		    2287	fi_dlg.js  0%  100%  
+	    Older     		    2782	fr.js  0%  100%  
+	    Older     		    2341	fr_dlg.js  0%  100%  
+	    Older     		    5268	he.js  0%  100%  
+	    Older     		    4766	he_dlg.js  0%  100%  
+	    Older     		    2771	it.js  0%  100%  
+	    Older     		    2120	it_dlg.js  0%  100%  
+	    Older     		    3775	ja.js  0%  100%  
+	    Older     		    3416	ja_dlg.js  0%  100%  
+	    Older     		    2329	nl.js  0%  100%  
+	    Older     		    2040	nl_dlg.js  0%  100%  
+	    Older     		    2400	no.js  0%  100%  
+	    Older     		    2124	no_dlg.js  0%  100%  
+	    Older     		    2869	pl.js  0%  100%  
+	    Older     		    2298	pl_dlg.js  0%  100%  
+	    Older     		    2714	pt.js  0%  100%  
+	    Older     		    2217	pt_dlg.js  0%  100%  
+	    Older     		    2502	sv.js  0%  100%  
+	    Older     		    2205	sv_dlg.js  0%  100%  
+	    Older     		    3059	zh.js  0%  100%  
+	    Older     		    2544	zh_dlg.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\Default\
+	    Older     		    2607	content.css  0%  100%  
+	    Older     		    5761	dialog.css  0%  100%  
+	    Older     		   15959	ui.css  0%  100%  
+	                   6	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\Default\Img\
+	    Older     		    3133	buttons.png  0%  100%  
+	    Older     		      64	items.gif  0%  100%  
+	    Older     		      68	menu_arrow.gif  0%  100%  
+	    Older     		      70	menu_check.gif  0%  100%  
+	    Older     		    1787	progress.gif  0%  100%  
+	    Older     		    1322	tabs.gif  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\Highcontrast\
+	    Older     		    1122	content.css  0%  100%  
+	    Older     		    5219	dialog.css  0%  100%  
+	    Older     		    8886	ui.css  0%  100%  
+	                   5	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\O2k7\
+	    Older     		    2331	content.css  0%  100%  
+	    Older     		    5849	dialog.css  0%  100%  
+	    Older     		   15405	ui.css  0%  100%  
+	    Older     		    1695	ui_black.css  0%  100%  
+	    Older     		     860	ui_silver.css  0%  100%  
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Advanced\Skins\O2k7\Img\
+	    Older     		    2766	button_bg.png  0%  100%  
+	    Older     		     651	button_bg_black.png  0%  100%  
+	    Older     		    2084	button_bg_silver.png  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\
+	    Older     		    2226	editor_template.js  0%  100%  
+	    Older     		    3205	editor_template_src.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Img\
+	    Older     		     806	icons.gif  0%  100%  
+	                  14	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Langs\
+	    Older     		     359	da.js  0%  100%  
+	    Older     		     355	de.js  0%  100%  
+	    Older     		     347	en.js  0%  100%  
+	    Older     		     376	fi.js  0%  100%  
+	    Older     		     349	fr.js  0%  100%  
+	    Older     		     539	he.js  0%  100%  
+	    Older     		     345	it.js  0%  100%  
+	    Older     		     487	ja.js  0%  100%  
+	    Older     		     326	nl.js  0%  100%  
+	    Older     		     309	no.js  0%  100%  
+	    Older     		     382	pl.js  0%  100%  
+	    Older     		     351	pt.js  0%  100%  
+	    Older     		     347	sv.js  0%  100%  
+	    Older     		     401	zh.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Skins\
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Skins\Default\
+	    Older     		     513	content.css  0%  100%  
+	    Older     		    2105	ui.css  0%  100%  
+	                   2	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Skins\O2k7\
+	    Older     		     461	content.css  0%  100%  
+	    Older     		    2340	ui.css  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Simple\Skins\O2k7\Img\
+	    Older     		    5102	button_bg.png  0%  100%  
+	                   9	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\
+	    Older     		    2682	about.htm  0%  100%  
+	    Older     		    1091	anchor.htm  0%  100%  
+	    Older     		    2339	charmap.htm  0%  100%  
+	    Older     		    3333	color_picker.htm  0%  100%  
+	    Older     		   43516	editor_template_src.js  0%  100%  
+	    Older     		    4046	image.htm  0%  100%  
+	    Older     		    2547	link.htm  0%  100%  
+	    Older     		    1730	shortcuts.htm  0%  100%  
+	    Older     		    1382	source_editor.htm  0%  100%  
+	                  11	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Img\
+	    Older     		    2584	colorpicker.jpg  0%  100%  
+	    Older     		     239	flash.gif  0%  100%  
+	    Older     		   11982	icons.gif  0%  100%  
+	    Older     		     600	iframe.gif  0%  100%  
+	    Older     		     325	pagebreak.gif  0%  100%  
+	    Older     		     301	quicktime.gif  0%  100%  
+	    Older     		     439	realmedia.gif  0%  100%  
+	    Older     		     384	shockwave.gif  0%  100%  
+	    Older     		      43	trans.gif  0%  100%  
+	    Older     		     597	video.gif  0%  100%  
+	    Older     		     415	windowsmedia.gif  0%  100%  
+	                   7	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Js\
+	    Older     		    2203	about.js  0%  100%  
+	    Older     		    1193	anchor.js  0%  100%  
+	    Older     		   15793	charmap.js  0%  100%  
+	    Older     		   14559	color_picker.js  0%  100%  
+	    Older     		    6391	image.js  0%  100%  
+	    Older     		    4884	link.js  0%  100%  
+	    Older     		    1694	source_editor.js  0%  100%  
+	                  30	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Langs\
+	    Older     		    2109	da.js  0%  100%  
+	    Older     		    1926	da_dlg.js  0%  100%  
+	    Older     		    2265	de.js  0%  100%  
+	    Older     		    1860	de_dlg.js  0%  100%  
+	    Older     		    2488	en.js  0%  100%  
+	    Older     		    2066	en_dlg.js  0%  100%  
+	    Older     		    2491	en_us.js  0%  100%  
+	    Older     		    2069	en_us_dlg.js  0%  100%  
+	    Older     		    2232	es.js  0%  100%  
+	    Older     		    1998	es_dlg.js  0%  100%  
+	    Older     		    2294	fr.js  0%  100%  
+	    Older     		    1964	fr_dlg.js  0%  100%  
+	    Older     		    2209	he.js  0%  100%  
+	    Older     		    1987	he_dlg.js  0%  100%  
+	    Older     		    2669	it.js  0%  100%  
+	    Older     		    2058	it_dlg.js  0%  100%  
+	    Older     		    2727	ja.js  0%  100%  
+	    Older     		    2429	ja_dlg.js  0%  100%  
+	    Older     		    2823	ko.js  0%  100%  
+	    Older     		    2147	ko_dlg.js  0%  100%  
+	    Older     		    1946	nl.js  0%  100%  
+	    Older     		    1768	nl_dlg.js  0%  100%  
+	    Older     		    1948	no.js  0%  100%  
+	    Older     		    1846	no_dlg.js  0%  100%  
+	    Older     		    3405	ru.js  0%  100%  
+	    Older     		    2725	ru_dlg.js  0%  100%  
+	    Older     		    2012	sv.js  0%  100%  
+	    Older     		    1912	sv_dlg.js  0%  100%  
+	    Older     		    2409	zh.js  0%  100%  
+	    Older     		    2070	zh_dlg.js  0%  100%  
+	                   0	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Skins\
+	                   3	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Skins\Umbraco\
+	    Older     		    1367	content.css  0%  100%  
+	    Older     		    5364	dialog.css  0%  100%  
+	    Older     		   16035	ui.css  0%  100%  
+	                   6	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Themes\Umbraco\Skins\Umbraco\Img\
+	    Older     		    4579	buttons.png  0%  100%  
+	    Older     		      70	items.gif  0%  100%  
+	    Older     		      68	menu_arrow.gif  0%  100%  
+	    Older     		      70	menu_check.gif  0%  100%  
+	    Older     		    1787	progress.gif  0%  100%  
+	    Older     		    1326	tabs.gif  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tinymce3\Utils\
+	    Older     		    2046	editable_selects.js  0%  100%  
+	    Older     		    5991	form_utils.js  0%  100%  
+	    Older     		    4055	mctabs.js  0%  100%  
+	    Older     		    6100	validate.js  0%  100%  
+	                  11	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tree\
+	    Older     		    2638	jquery.tree.checkbox.js  0%  100%  
+	    Older     		    9567	jquery.tree.contextmenu.js  0%  100%  
+	    Older     		  114237	jquery.tree.js  0%  100%  
+	    Older     		     548	jquery.tree.metadata.js  0%  100%  
+	    Older     		    1642	menuIcons.css  0%  100%  
+	    Older     		    1866	NodeDefinition.js  0%  100%  
+	    Older     		   12897	sprites.png  0%  100%  
+	    Older     		    7307	sprites_ie6.gif  0%  100%  
+	    Older     		    2597	treeIcons.css  0%  100%  
+	    Older     		    3662	UmbracoContext.js  0%  100%  
+	    Older     		   55287	UmbracoTree.js  0%  100%  
+	                   5	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tree\Themes\
+	    Older     		      61	marker.gif  0%  100%  
+	    Older     		      62	marker_rtl.gif  0%  100%  
+	    Older     		      52	plus.gif  0%  100%  
+	    Older     		     720	remove.png  0%  100%  
+	    Older     		    3867	rename.png  0%  100%  
+	                   4	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tree\Themes\Default\
+	    Older     		      43	dot_for_ie.gif  0%  100%  
+	    Older     		    6680	icons.png  0%  100%  
+	    Older     		    2435	style.css  0%  100%  
+	    Older     		    1844	throbber.gif  0%  100%  
+	                  21	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Tree\Themes\Umbraco\
+	    Older     		    1600	arrows.png  0%  100%  
+	    Older     		    2910	check_0.png  0%  100%  
+	    Older     		    3197	check_1.png  0%  100%  
+	    Older     		    3283	check_2.png  0%  100%  
+	    Older     		      35	context.gif  0%  100%  
+	    Older     		      54	contextMenuBg.gif  0%  100%  
+	    Older     		    3329	create.png  0%  100%  
+	    Older     		      43	dot.gif  0%  100%  
+	    Older     		    3237	f.png  0%  100%  
+	    Older     		      60	fminus.gif  0%  100%  
+	    Older     		      59	fminus_rtl.gif  0%  100%  
+	    Older     		     108	fplus.gif  0%  100%  
+	    Older     		     108	fplus_rtl.gif  0%  100%  
+	    Older     		    6680	icons.png  0%  100%  
+	    Older     		      55	lastli.gif  0%  100%  
+	    Older     		      54	lastli_rtl.gif  0%  100%  
+	    Older     		      47	li.gif  0%  100%  
+	    Older     		     381	newVersion_overlay.png  0%  100%  
+	    Older     		     282	protect_overlay.gif  0%  100%  
+	    Older     		    5258	style.css  0%  100%  
+	    Older     		    1844	throbber.gif  0%  100%  
+	                  14	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Ui\
+	    Older     		   52012	base2.js  0%  100%  
+	    Older     		    4482	dd.css  0%  100%  
+	    Older     		     138	dd_arrow.gif  0%  100%  
+	    Older     		   13659	default.css  0%  100%  
+	    Older     		    2324	default.js  0%  100%  
+	    Older     		    1423	jquery.alphanumeric.js  0%  100%  
+	    Older     		   51648	jquery.dd.js  0%  100%  
+	    Older     		   94843	jquery.js  0%  100%  
+	    Older     		    3581	jquery.tooltip.min.js  0%  100%  
+	    Older     		  235652	jqueryui.js  0%   55%  100%  
+	    Older     		    1943	jQueryWresize.js  0%  100%  
+	    Older     		    3954	json2.js  0%  100%  
+	    Older     		   41412	knockout.js  0%  100%  
+	    Older     		    8687	knockout.mapping.js  0%  100%  
+	                   1	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Ui\ui-lightness\
+	    Older     		   33967	jquery-ui.custom.css  0%  100%  
+	                  14	D:\GitHub\LookWhosEditingToo\src\packages\UmbracoCms.7.4.3\UmbracoFiles\Umbraco_Client\Ui\ui-lightness\images\
+	    Older     		     260	ui-bg_diagonals-thick_18_b81900_40x40.png  0%  100%  
+	    Older     		     251	ui-bg_diagonals-thick_20_666666_40x40.png  0%  100%  
+	    Older     		     178	ui-bg_flat_10_000000_40x100.png  0%  100%  
+	    Older     		     104	ui-bg_glass_100_f6f6f6_1x400.png  0%  100%  
+	    Older     		     125	ui-bg_glass_100_fdf5ce_1x400.png  0%  100%  
+	    Older     		     105	ui-bg_glass_65_ffffff_1x400.png  0%  100%  
+	    Older     		    3762	ui-bg_gloss-wave_35_f6a828_500x100.png  0%  100%  
+	    Older     		      90	ui-bg_highlight-soft_100_eeeeee_1x100.png  0%  100%  
+	    Older     		     129	ui-bg_highlight-soft_75_ffe45c_1x100.png  0%  100%  
+	    Older     		    4369	ui-icons_222222_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_228ef1_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ef8c08_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ffd27a_256x240.png  0%  100%  
+	    Older     		    4369	ui-icons_ffffff_256x240.png  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       204         0         0         0         0         1
+   Files :      1000      1000         0         0         0         1
+   Bytes :    6.23 m    6.23 m         0         0         0     3.4 k
+   Times :   0:00:20   0:00:20                       0:00:00   0:00:00
+
+
+   Speed :              324309 Bytes/sec.
+   Speed :              18.557 MegaBytes/min.
+   Ended : 16 July 2016 11:02:41
+

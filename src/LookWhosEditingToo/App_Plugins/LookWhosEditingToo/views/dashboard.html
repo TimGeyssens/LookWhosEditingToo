@@ -1,18 +1,28 @@
 <umb-panel ng-controller="LWET.DashboardController">
     <div class="umb-pane">
-        <h1>These files are currently edited</h1>
-        <h2>{{text}}</h2>
-        <button class="btn btn-primary" ng-click="greetAll()">Greet all</button>
+        <h5>Send Global Message</h5>
+        <h3>{{text}}</h3>
+        <textarea ng-model="$parent.globalMessage" class="form-control" 
+                  rows="3"
+                  ng-class="redBorder" 
+                  placeholder="this will send a sticky notification to all loggedin users"></textarea>
+        <br />
+        <button class="btn btn-primary" ng-click="greetAll()">Send</button>
+        <br />
+        <br/>
+        <h5>These files are currently edited</h5>
         <div id='look-whos-editing-too'>
             <div class="span4 well" ng-repeat="(content, editors) in allEdits">
-                <i class="icon icon-home pull-left"></i>
-                <h1>blaaa</h1>
                 <ul class="unstyled">
                     <li ng-repeat="editor in editors">
-                        <img id="look-whos-editing-too-{{editor.userId}}" src="//www.gravatar.com/avatar/{{editor.userGravatar}}.jpg?s=30&d=mm" title="{{editor.userName}}" />
+                        <span><i ng-class="editor.icon"></i>{{editor.nodeName}}:</span>
+                        <img id="look-whos-editing-too-{{editor.userId}}"
+                             ng-src="//www.gravatar.com/avatar/{{editor.userGravatar}}.jpg?s=30&d=mm"
+                             title="{{editor.userName}}"/>
+                        <span>{{editor.userName}}</span>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </div>
     </div>
 </umb-panel>
