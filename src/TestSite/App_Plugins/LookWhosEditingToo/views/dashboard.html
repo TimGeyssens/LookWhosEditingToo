@@ -13,12 +13,12 @@
         <h5>These files are currently edited</h5>
         <div id='look-whos-editing-too'>
             <div class="span4 well" ng-repeat="(content, editors) in allEdits">
-                <!--<i class="icon icon-home pull-left"></i>-->
                 <ul class="unstyled">
                     <li ng-repeat="editor in editors">
+                        <span><i ng-class="editor.icon"></i>{{editor.nodeName}}:</span>
                         <img id="look-whos-editing-too-{{editor.userId}}"
                              ng-src="//www.gravatar.com/avatar/{{editor.userGravatar}}.jpg?s=30&d=mm"
-                             title="{{editor.userName}}" />
+                             title="{{editor.userName}}"/>
                         <span>{{editor.userName}}</span>
                     </li>
                 </ul>

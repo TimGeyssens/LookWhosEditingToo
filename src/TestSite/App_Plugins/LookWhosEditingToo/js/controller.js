@@ -3,7 +3,7 @@ function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource,
     $scope.text = "";
     $scope.allEdits = [];
     $scope.globalMessage = "";
-    lookWhosEditingTooResource.getAllEdits().then(function (response) {
+    lookWhosEditingTooResource.getAllEdits(true).then(function (response) {
         $scope.allEdits = _.groupBy(response.data, "nodeId");
     });
 
@@ -83,7 +83,7 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     }
 
     function getAllEdits() {
-        lookWhosEditingTooResource.getAllEdits().then(function (resp) {
+        lookWhosEditingTooResource.getAllEdits(false).then(function (resp) {
             allEdits = resp.data;
             updateTreeAndPage();
         });

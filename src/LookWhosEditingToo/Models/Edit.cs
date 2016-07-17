@@ -34,5 +34,12 @@ namespace LookWhosEditingToo.Models
         [Ignore]
         [DataMember(Name = "userGravatar")]
         public string UserGravatar { get; set; }
+
+        [Ignore]
+        [DataMember(Name = "icon")]
+        public string Icon { get; set; }
+        [Ignore]
+        [DataMember(Name = "nodeName")]
+        public string NodeName { get; set; }
     }
 }

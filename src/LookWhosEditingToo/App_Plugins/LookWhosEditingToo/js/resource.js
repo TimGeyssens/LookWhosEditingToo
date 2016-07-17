@@ -5,8 +5,8 @@
 
     return {
 
-        getAllEdits: function () {
-            return $http.get(apiRoot + "GetAllEdits");
+        getAllEdits: function (extended) {
+            return $http.get(apiRoot + "GetAllEdits?extended=" + extended);
         },
 
         getByNodeId: function (nodeId) {
