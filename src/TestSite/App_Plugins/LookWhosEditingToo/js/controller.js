@@ -93,8 +93,8 @@ function lwetContentController($scope, $rootScope, lookWhosEditingTooResource, l
     $rootScope.$on("broadcastPublished", function (data, res) {
         if ($routeParams.id == res.nodeId) {
             authResource.getCurrentUser().then(function (user) {
-                if (user.name != res.userName) {
-                     lookWhosEditingTooNotificationServiceWrapper.setPublishedNotification(res.userName, res.time);
+                if (user.email != res.email) {
+                    lookWhosEditingTooNotificationServiceWrapper.setPublishedNotification(res.email, res.time);
                 }
             });
         }

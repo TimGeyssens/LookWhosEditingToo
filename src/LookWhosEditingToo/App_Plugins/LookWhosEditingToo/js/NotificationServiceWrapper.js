@@ -17,17 +17,17 @@ function lookWhosEditingTooNotificationServiceWrapper(notificationsService) {
                     headline: 'Message From ' + userName,
                     message: message,
                     type: 'info',
-                    sticky: true
+                    sticky: false
                 });
         },
-        setPublishedNotification: function (username, time) {
+        setPublishedNotification: function (email, time) {
             notificationsService
                 .add(
                 {
                     headline: 'This node was just published at ' + time + ' by ',
-                    message: username,
+                    message: email,
                     type: 'warning',
-                    sticky: true
+                    sticky: false
                 });
         },
         removeAll: function () {

@@ -20,10 +20,10 @@
         proxy.client.broadcastStopEdit = function (userId) {
             $rootScope.$emit("broadcastStopEdit", userId);
         };
-        proxy.client.broadcastPublished = function(nodeId, username, time) {
+        proxy.client.broadcastPublished = function (nodeId, email, time) {
             var data = {};
             data.nodeId = nodeId;
-            data.userName = username;
+            data.email = email;
             data.time = time;
             $rootScope.$emit('broadcastPublished', data);
         };

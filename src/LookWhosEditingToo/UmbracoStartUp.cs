@@ -20,18 +20,20 @@ namespace LookWhosEditingToo
             ContentService.Published += ContentService_Published;
         }
 
-        private void ContentService_Published(Umbraco.Core.Publishing.IPublishingStrategy sender, Umbraco.Core.Events.PublishEventArgs<Umbraco.Core.Models.IContent> e)
+        private void ContentService_Published(Umbraco.Core.Publishing.IPublishingStrategy sender,
+            Umbraco.Core.Events.PublishEventArgs<Umbraco.Core.Models.IContent> e)
         {
             var currentUser = UmbracoContext.Current.Security.CurrentUser;
             if (currentUser == null) return;
-            var userName = currentUser.Username;
+            var email = currentUser.Email;
             var hubContext = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
             foreach (var node in e.PublishedEntities)
             {
                 hubContext.Clients.Group("LWETGroup")
-                    .broadcastPublished(node.Id, userName, DateTime.Now.ToString("HH:mm:ss"));
+                    .broadcastPublished(node.Id, email, DateTime.Now.ToString("HH:mm:ss"));
             }
         }
+
         protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             TreeControllerBase.TreeNodesRendering += TreeControllerBase_TreeNodesRendering;
