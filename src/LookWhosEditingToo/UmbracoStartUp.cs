@@ -22,7 +22,9 @@ namespace LookWhosEditingToo
 
         private void ContentService_Published(Umbraco.Core.Publishing.IPublishingStrategy sender, Umbraco.Core.Events.PublishEventArgs<Umbraco.Core.Models.IContent> e)
         {
-            var userName = UmbracoContext.Current.Security.CurrentUser.Username;
+            var currentUser = UmbracoContext.Current.Security.CurrentUser;
+            if (currentUser == null) return;
+            var userName = currentUser.Username;
             var hubContext = GlobalHost.ConnectionManager.GetHubContext<EditingHub>();
             foreach (var node in e.PublishedEntities)
             {
