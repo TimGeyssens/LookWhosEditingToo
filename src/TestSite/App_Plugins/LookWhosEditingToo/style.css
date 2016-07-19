@@ -8,11 +8,6 @@ div.look-whos-editing-too:before{
 	padding-top: 8px;
 }
 
-div#look-whos-editing-too {
-    float: right;
-    padding-top: 15px;
-}
-
 div.umb-pane > div#look-whos-editing-too {
     float:none;
     padding-right: 15px;
@@ -26,3 +21,9 @@ div#look-whos-editing-too img {
 div.umb-pane > div#look-whos-editing-too img {
     margin-right: 15px;
 }
+#look-whos-editing-too-container {
+    float: left;
+    margin-right: 10px;
+}
+
+.redBorder{ border: 1px solid red;}
