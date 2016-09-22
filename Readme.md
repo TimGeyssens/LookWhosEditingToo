@@ -6,7 +6,7 @@
 
 ![](logo.png)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/eh32q9jaws66vs29?svg=true)](https://ci.appveyor.com/project/TimGeyssens/umbracopagenotfoundmanager)
+[![Build status](https://ci.appveyor.com/api/projects/status/eh32q9jaws66vs29?svg=true)](https://ci.appveyor.com/project/TimGeyssens/lookwhoseditingtoo)
 
 
 
