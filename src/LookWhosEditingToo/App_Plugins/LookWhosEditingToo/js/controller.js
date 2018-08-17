@@ -1,4 +1,4 @@
-function lwetDashboardController($scope, $rootScope, lookWhosEditingTooResource, contentResource, lwetSignalRService, lookWhosEditingTooNotificationServiceWrapper) {
+function lwetDashboardController($scope, $rootScope, $compile, lookWhosEditingTooResource, contentResource, lwetSignalRService, lookWhosEditingTooNotificationServiceWrapper) {
 
     $scope.text = "";
     $scope.allEdits = [];
