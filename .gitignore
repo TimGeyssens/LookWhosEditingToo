@@ -443,3 +443,4 @@ ASALocalRun/
 .localhistory/
 
 src/.vs/config/applicationhost.config
+src/TestSite/App_Data/Umbraco.sdf
