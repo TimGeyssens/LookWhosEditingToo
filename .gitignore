@@ -442,3 +442,4 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
+src/.vs/config/applicationhost.config
